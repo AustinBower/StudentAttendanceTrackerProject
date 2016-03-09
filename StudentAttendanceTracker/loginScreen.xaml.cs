@@ -29,15 +29,22 @@ namespace StudentAttendanceTracker
 
         }
 
+        //check the credentials entered in the text boxes, advance to home screen if valid. else tell user credentials are invalid
         private void loginSubmitButton_Click(object sender, RoutedEventArgs e)
         {
-
+            /*
+            * Check the validity of the credentials against the database here!!!
+            */
+            homeScreen home = new homeScreen();
+            home.Show();
+            this.Close();
         }
 
+        //close this login window and open up the welcome window
         private void loginGoBackButton_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow newMain = new MainWindow();
-            newMain.Show();
+            MainWindow welcome = new MainWindow();
+            welcome.Show();
             this.Close();
         }
     }

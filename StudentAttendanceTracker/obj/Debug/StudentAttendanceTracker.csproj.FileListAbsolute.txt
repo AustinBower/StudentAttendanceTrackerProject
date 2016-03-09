@@ -17,3 +17,5 @@ C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTrack
 C:\Users\Harold\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.exe.config
 C:\Users\Harold\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.exe
 C:\Users\Harold\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.pdb
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\homeScreen.g.cs
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\homeScreen.baml
