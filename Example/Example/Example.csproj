@@ -56,7 +56,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="OutputInformation.cs" />
-    <Compile Include="StudenIDNumber.cs" />
     <Compile Include="StudentIDNumber.cs" />
     <Compile Include="StudentNumber.cs" />
     <Compile Include="TimeStamp.cs" />

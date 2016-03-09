@@ -1,7 +1,7 @@
 ﻿using System;
-/*This creates a time stamp by */
 namespace Example
 {
+
     public class TimeStamp
     {
 
@@ -12,13 +12,6 @@ namespace Example
             return Date.ToString("HH:mm:ss");
 
         }// public static String GetTimestamp(DateTime value)
-        public string GetDate(DateTime Date)
-        {
-
-            Date = DateTime.Today;
-            return Date.ToString().Remove(8);
-
-        }// public string GetDate(DateTime Date)
         public string Date
         {
 
@@ -38,4 +31,5 @@ namespace Example
         }// public string Date
 
     }// class TimeStamp
-}
+
+}// namespace Example

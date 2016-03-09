@@ -5,7 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Example"
         mc:Ignorable="d"
-        Title="Student Login" Height="350" Width="525" WindowState="Maximized">
+        Title="Student Login" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <local:StringWrapper x:Key="wrapper"/>
+    </Window.Resources>
+    <Window.DataContext>
+        <Binding Source="{StaticResource wrapper}"/>
+    </Window.DataContext>
     <Grid>
         <Button x:Name="go_back_button"
                 Content="Go Back"
@@ -14,17 +20,18 @@
                 VerticalAlignment="Top"
                 Width="75"
                 Click="go_back_button_Click"/>
-        
+
         <TextBlock x:Name="student_instruction_block"
                    HorizontalAlignment="Left"
-                   Margin="153,71,0,0" TextWrapping="Wrap"
-                   Text="Please Swipe ID Card"
+                   Margin="153,71,0,0"
+                   TextWrapping="Wrap"
+                   
                    VerticalAlignment="Top"
                    RenderTransformOrigin="0.408,-3.375"
                    Height="34"
                    Width="204"
                    FontSize="21.333"/>
-        
+
         <TextBox x:Name="student_ID_input_box"
                  HorizontalAlignment="Left"
                  Height="23"
@@ -32,11 +39,11 @@
                  TextWrapping="Wrap"
                  VerticalAlignment="Top"
                  Width="120"
+                 Text=""
                  RenderTransformOrigin="0.492,0.478"
                  TextChanged="student_ID_input_box_TextChanged"
                  Cursor="IBeam"
-                 MaxLength="18" Opacity="0"
-                 />
-
+                 MaxLength="18" Opacity="0"/>
+        
     </Grid>
 </Window>
