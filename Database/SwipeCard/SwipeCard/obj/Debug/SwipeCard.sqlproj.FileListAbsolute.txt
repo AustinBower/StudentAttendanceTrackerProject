@@ -1,0 +1,5 @@
+C:\All-in-One\01_Courses\SE\SwipeCard\SwipeCard\bin\Debug\SwipeCard.dacpac
+C:\All-in-One\01_Courses\SE\SwipeCard\SwipeCard\bin\Debug\SwipeCard.dll
+C:\All-in-One\01_Courses\SE\SwipeCard\SwipeCard\bin\Debug\SwipeCard.pdb
+C:\All-in-One\01_Courses\SE\SwipeCard\SwipeCard\obj\Debug\SwipeCard.dll
+C:\All-in-One\01_Courses\SE\SwipeCard\SwipeCard\obj\Debug\SwipeCard.pdb
