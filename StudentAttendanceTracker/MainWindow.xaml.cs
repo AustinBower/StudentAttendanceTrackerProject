@@ -34,7 +34,9 @@ namespace StudentAttendanceTracker
 
         private void welcomeRegisterButton_Click(object sender, RoutedEventArgs e)
         {
-
+            registerScreen registerWindow = new registerScreen();
+            registerWindow.Show();
+            this.Close();
         }
     }
 }

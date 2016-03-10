@@ -24,6 +24,14 @@ namespace StudentAttendanceTracker
             InitializeComponent();
         }
 
+
+        private void addStudentButton_Click(object sender, RoutedEventArgs e)
+        {
+            addStudent addStudentWindow = new addStudent();
+            addStudentWindow.Show();
+            this.Close();
+        }
+
         //close the home window and go back to the welcome window
         private void logOutButton_Click(object sender, RoutedEventArgs e)
         {

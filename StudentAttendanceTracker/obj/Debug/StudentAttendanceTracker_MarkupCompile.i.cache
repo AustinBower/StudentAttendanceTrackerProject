@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\
+C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\
 StudentAttendanceTracker
 none
 false
 DEBUG;TRACE
-C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\App.xaml
-31656151917
+C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\App.xaml
+5-1577914421
 
-11-104783422
+13-553684971
 13738642453
-homeScreen.xaml;loginScreen.xaml;MainWindow.xaml;
+addStudent.xaml;homeScreen.xaml;loginScreen.xaml;MainWindow.xaml;registerScreen.xaml;
 
 False
 
