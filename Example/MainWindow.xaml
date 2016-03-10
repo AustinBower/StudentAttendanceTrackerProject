@@ -6,8 +6,7 @@
         xmlns:local="clr-namespace:Example"
         mc:Ignorable="d"
         Title="Student Login" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen">
-    <Grid Background="#FF741D1E">
-        
+    <Grid>
         <Button x:Name="go_back_button"
                 Content="Go Back"
                 HorizontalAlignment="Left"
@@ -20,7 +19,6 @@
                    HorizontalAlignment="Left"
                    Margin="153,71,0,0"
                    TextWrapping="Wrap"
-                   Foreground="White"
                    Text="Please swipe ID card:"
                    VerticalAlignment="Top"
                    RenderTransformOrigin="0.408,-3.375"
