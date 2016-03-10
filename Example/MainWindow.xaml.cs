@@ -61,10 +61,6 @@ namespace Example
         private void go_back_button_Click(object sender, RoutedEventArgs e)
         {
 
-            //Console.WriteLine(student_instruction_block.Text);
-
-            Application curApp = Application.Current;
-            curApp.Shutdown();
 
         }// private void go_back_button_Click(object sender, RoutedEventArgs e)
 

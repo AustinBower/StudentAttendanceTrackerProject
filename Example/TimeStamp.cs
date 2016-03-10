@@ -36,6 +36,7 @@ namespace Example
             {
 
                 Console.WriteLine("Error date counter exceeded string length!");
+                refinedStringDate = "";
 
             }// catch 1
 
