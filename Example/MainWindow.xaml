@@ -5,14 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Example"
         mc:Ignorable="d"
-<<<<<<< HEAD
         Title="Student Login" Height="350" Width="500" WindowState="Maximized" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center">
     <Grid Background="#FF741D1E">
 
-=======
-        Title="Student Login" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen">
-    <Grid>
->>>>>>> origin/master
         <Button x:Name="go_back_button"
                 Content="Go Back"
                 HorizontalAlignment="Center"
@@ -22,7 +17,6 @@
                 Click="go_back_button_Click"/>
 
         <TextBlock x:Name="student_instruction_block"
-<<<<<<< HEAD
                     HorizontalAlignment="Center"
                     Margin="132,151,156,134"
                     TextWrapping="Wrap"
@@ -33,17 +27,6 @@
                     Height="34"
                     Width="204"
                     FontSize="21.333"/>
-=======
-                   HorizontalAlignment="Left"
-                   Margin="153,71,0,0"
-                   TextWrapping="Wrap"
-                   Text="Please swipe ID card:"
-                   VerticalAlignment="Top"
-                   RenderTransformOrigin="0.408,-3.375"
-                   Height="34"
-                   Width="204"
-                   FontSize="21.333"/>
->>>>>>> origin/master
 
         <TextBox x:Name="student_ID_input_box"
                     HorizontalAlignment="Center"
