@@ -23,5 +23,12 @@ namespace StudentAttendanceTracker
         {
             InitializeComponent();
         }
+
+        private void addStudentCancel_Click(object sender, RoutedEventArgs e)
+        {
+            homeScreen homeScreenWindow = new homeScreen();
+            homeScreenWindow.Show();
+            this.Close();
+        }
     }
 }
