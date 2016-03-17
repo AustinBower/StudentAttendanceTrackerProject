@@ -20,3 +20,21 @@ C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTra
 C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.csproj.GenerateResource.Cache
 C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.exe
 C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.pdb
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.exe.config
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.exe
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.pdb
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.csprojResolveAssemblyReference.cache
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\addStudent.g.cs
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\homeScreen.g.cs
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\loginScreen.g.cs
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\MainWindow.g.cs
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\registerScreen.g.cs
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\App.g.cs
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker_MarkupCompile.cache
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker_MarkupCompile.lref
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\addStudent.baml
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\homeScreen.baml
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\loginScreen.baml
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\MainWindow.baml
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\registerScreen.baml
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.g.resources
