@@ -13,6 +13,6 @@
         <Label x:Name="label1" Content="Student ID" HorizontalAlignment="Center" Margin="230,210,188,254" VerticalAlignment="Center" FontSize="18.667" Foreground="#FFFFECC7"/>
         <Label x:Name="label2" Content="Student Name" HorizontalAlignment="Center" Margin="208,277,181,188" VerticalAlignment="Center" FontSize="18.667" Foreground="#FFFFECC7"/>
         <Button x:Name="addStudentSubmit" Content="Submit" HorizontalAlignment="Center" Margin="163,343,279,135" VerticalAlignment="Center" Width="75"/>
-        <Button x:Name="addStudentCancel" Content="Cancel" HorizontalAlignment="Center" Margin="302,343,141,135" VerticalAlignment="Center" Width="74"/>
+        <Button x:Name="addStudentCancel" Content="Cancel" HorizontalAlignment="Center" Margin="302,343,141,135" VerticalAlignment="Center" Width="74" Click="addStudentCancel_Click"/>
     </Grid>
 </Window>

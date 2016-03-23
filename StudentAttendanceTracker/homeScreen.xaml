@@ -8,7 +8,7 @@
         Title="Home" Height="471.277" Width="1231.064" WindowState="Maximized">
     <Grid Background="#FF741D1E">
         <Button x:Name="takeAttendanceButton" Content="Take Attendance" HorizontalAlignment="Center" Margin="851,70,271,0" VerticalAlignment="Top" Width="101"/>
-        <Button x:Name="addStudentButton" Content="Add Student" HorizontalAlignment="Center" Margin="851,114,271,0" VerticalAlignment="Top" Width="101"/>
+        <Button x:Name="addStudentButton" Content="Add Student" HorizontalAlignment="Center" Margin="851,114,271,0" VerticalAlignment="Top" Width="101" Click="addStudentButton_Click"/>
         <Button x:Name="logOutButton" Content="Log Out" HorizontalAlignment="Center" Margin="851,160,271,0" VerticalAlignment="Top" Width="101" Click="logOutButton_Click"/>
 
     </Grid>

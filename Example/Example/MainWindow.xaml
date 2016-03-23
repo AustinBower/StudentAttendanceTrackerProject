@@ -5,45 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Example"
         mc:Ignorable="d"
-        Title="Student Login" Height="350" Width="525" WindowState="Maximized" WindowStartupLocation="CenterScreen">
-    <Window.Resources>
-        <local:StringWrapper x:Key="wrapper"/>
-    </Window.Resources>
-    <Window.DataContext>
-        <Binding Source="{StaticResource wrapper}"/>
-    </Window.DataContext>
-    <Grid>
+        Title="Student Login" Height="350" Width="500" WindowState="Maximized" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center">
+    <Grid Background="#FF741D1E">
+
         <Button x:Name="go_back_button"
                 Content="Go Back"
-                HorizontalAlignment="Left"
-                Margin="210,272,0,0"
-                VerticalAlignment="Top"
-                Width="75"
+                HorizontalAlignment="Center"
+                Margin="192,246,226,53"
+                VerticalAlignment="Center"
+                Width="74"
                 Click="go_back_button_Click"/>
 
         <TextBlock x:Name="student_instruction_block"
-                   HorizontalAlignment="Left"
-                   Margin="153,71,0,0"
-                   TextWrapping="Wrap"
-                   
-                   VerticalAlignment="Top"
-                   RenderTransformOrigin="0.408,-3.375"
-                   Height="34"
-                   Width="204"
-                   FontSize="21.333"/>
+                    HorizontalAlignment="Center"
+                    Margin="132,151,156,134"
+                    TextWrapping="Wrap"
+                    Foreground="#FFFFECC7"
+                    Text="Please swipe ID card:"
+                    VerticalAlignment="Center"
+                    RenderTransformOrigin="0.408,-3.375"
+                    Height="34"
+                    Width="204"
+                    FontSize="21.333"/>
 
         <TextBox x:Name="student_ID_input_box"
-                 HorizontalAlignment="Left"
-                 Height="23"
-                 Margin="191,120,0,0"
-                 TextWrapping="Wrap"
-                 VerticalAlignment="Top"
-                 Width="120"
-                 Text=""
-                 RenderTransformOrigin="0.492,0.478"
-                 TextChanged="student_ID_input_box_TextChanged"
-                 Cursor="IBeam"
-                 MaxLength="18" Opacity="0"/>
-        
+                    HorizontalAlignment="Center"
+                    Height="23"
+                    Margin="172,199,200,97"
+                    TextWrapping="Wrap"
+                    VerticalAlignment="Center"
+                    Width="120"
+                    Text=""
+                    RenderTransformOrigin="0.492,0.478"
+                    TextChanged="student_ID_input_box_TextChanged"
+                    Cursor="IBeam"
+                    MaxLength="18" Opacity="0"/>
+
     </Grid>
 </Window>
