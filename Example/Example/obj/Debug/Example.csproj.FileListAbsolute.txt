@@ -12,18 +12,4 @@ c:\users\gamecoder\documents\visual studio 2015\Projects\Example\Example\obj\Deb
 c:\users\gamecoder\documents\visual studio 2015\Projects\Example\Example\obj\Debug\Example.csproj.GenerateResource.Cache
 c:\users\gamecoder\documents\visual studio 2015\Projects\Example\Example\obj\Debug\Example.exe
 c:\users\gamecoder\documents\visual studio 2015\Projects\Example\Example\obj\Debug\Example.pdb
-C:\Users\gameCoder\Documents\Visual Studio 2015\Projects\Example\Example\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\bin\Debug\Example.exe.config
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\obj\Debug\Example.exe
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\obj\Debug\Example.pdb
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\bin\Debug\Example.exe
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\bin\Debug\Example.pdb
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\obj\Debug\Example.csprojResolveAssemblyReference.cache
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\obj\Debug\MainWindow.g.cs
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\obj\Debug\App.g.cs
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\obj\Debug\Example_MarkupCompile.cache
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\obj\Debug\Example_MarkupCompile.lref
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\obj\Debug\MainWindow.baml
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\obj\Debug\Example.g.resources
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\obj\Debug\Example.Properties.Resources.resources
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\Example\Example\obj\Debug\Example.csproj.GenerateResource.Cache
+C:\Users\gameCoder\Documents\Visual Studio 2015\Projects\Example\Example\bin\Debug\MySql.Data.dll

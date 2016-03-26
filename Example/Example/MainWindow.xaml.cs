@@ -14,86 +14,100 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using System.Diagnostics;
-using System.Threading;
-
+using System.Windows.Threading;
+/*Allows developers to add functionality to UI objects. Comment Updated: 3/25/2016.*/
 namespace Example
 {
-    public class StringWrapper
-    {
-        public string bindingString
-        {
-            get; set;
-        }
-    }
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
 
-        public StringWrapper wrapper;
+        private System.Timers.Timer successTimer;
         private string studentInputVariable = "";
+        private static readonly DispatcherTimer timer;
         TimeStamp dateVariable = new TimeStamp();
         StudentIDNumber studentVariable = new StudentIDNumber();
-        public MainWindow()
+        StudentLogin loginVariable = new StudentLogin();
+        bool justSwiped;
+        static MainWindow()
         {
 
-            wrapper = new StringWrapper();
-            Console.WriteLine(wrapper.bindingString);
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(3);
+
+        }// static MainWindow()
+        public MainWindow()
+        {
+            
             InitializeComponent();
+            justSwiped = false;
+            timer.Tick += timeDelay;
+            successTimer = new System.Timers.Timer(3000);
             Console.WriteLine(student_instruction_block.Text);
             student_instruction_block.Visibility = Visibility.Visible;
-            wrapper.bindingString = "Please swipe ID Card";
             student_ID_input_box.Focus();
-            Binding bind = new Binding("bindingString");
-            bind.Source = wrapper;
-            bind.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
-            student_instruction_block.SetBinding(TextBlock.TextProperty, bind);
 
         }// public MainWindow
-
+        // Button used to return the menu screen. Comment updated 3/25/2016.
         private void go_back_button_Click(object sender, RoutedEventArgs e)
         {
 
-            //Console.WriteLine(student_instruction_block.Text);
-
-            Application curApp = Application.Current;
-            curApp.Shutdown();
 
         }// private void go_back_button_Click(object sender, RoutedEventArgs e)
-
+        // Textbox used to input ID swipe. Comment updated 3/25/2016.
         private void student_ID_input_box_TextChanged(object sender, TextChangedEventArgs e)
         {
-            BindingExpression bind = student_instruction_block.GetBindingExpression(TextBlock.TextProperty);
+            
             TextBox textInfomationVariable = sender as TextBox;
             studentInputVariable = textInfomationVariable.Text;
-            if (studentInputVariable.Length == 18)
+            if (studentInputVariable.Length == 18 && !justSwiped)
             {
 
                 studentInputVariable = studentVariable.retrieveStudentId(studentInputVariable);
                 studentInputVariable = studentInputVariable + " " + dateVariable.GetDate(DateTime.Today);
                 studentInputVariable = studentInputVariable + " " + dateVariable.GetTimestamp(DateTime.Now);
+                loginVariable.databaseLoginCheck(studentInputVariable);
                 System.IO.File.WriteAllText(@"C:\Users\gameCoder\Desktop\WriteText.txt", studentInputVariable);
                 student_ID_input_box.Clear();
-                wrapper.bindingString = "Successful Swipe";
-                bind.UpdateTarget();
-                changeDelay();
-                wrapper.bindingString = "PleaseSwipe an ID";
-                bind.UpdateTarget();
+                if(loginVariable.StudentFound)
+                {
 
+                    student_instruction_block.Text = "Successful Swipe!";
+                    go_back_button.Visibility = Visibility.Collapsed;
+                    timer.Start();
+
+                }// if(loginVariable.StudentFound)
+                else
+                {
+
+                    student_instruction_block.Text = "Invalid Swipe!";
+                    go_back_button.Visibility = Visibility.Collapsed;
+                    timer.Start();
+
+                }// else of if(loginVariable.StudentFound)
+                justSwiped = true;
             }// if (studentInputVariable.Length == 18)
 
         }// private void student_ID_input_box_TextChanged(object sender, TextChangedEventArgs e)
-
-        private void changeDelay()
+         // Method that creates a moment where the software does not make any changes until amount of
+         // time has passed. Comment updated 3/25/2016.
+        private void timeDelay(object sender, EventArgs e)
         {
 
-            DateTime startTime = DateTime.Now;
-            while ((DateTime.Now - startTime).TotalMilliseconds < 3000)
+            if(justSwiped)
             {
-            }// while((DateTime.Now - startTime).TotalMilliseconds < 3000)
 
-        }// private void changeDelay()
+                justSwiped = false;
+                student_instruction_block.Text = "Please swipe ID card:";
+                go_back_button.Visibility = Visibility.Visible;
+                timer.Stop();
+
+            }// if(justSwiped)
+
+        }// private void timeDelay(object sender, EventArgs e)
 
     }// public partial class MainWindow : Window
 

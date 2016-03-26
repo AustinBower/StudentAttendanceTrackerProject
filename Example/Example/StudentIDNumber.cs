@@ -1,14 +1,15 @@
 ﻿using System;
 /*This class manipulates the information taken off of the student ID cards. It goes through the
 string input and retrieves the student number by removing all characters not associated with the
-number.*/
+number. Comment updated 3/25/2016.*/
 namespace Example
 {
 
     public class StudentIDNumber
     {
 
-        private string idNumber;    
+        private string idNumber;
+        // Returns student ID with unnecessary information removed. Comment updated 3/25/2016.   
         public string retrieveStudentId(string idInformation)
         {
 
