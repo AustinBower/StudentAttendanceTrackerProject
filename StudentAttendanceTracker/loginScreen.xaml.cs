@@ -26,7 +26,7 @@ namespace StudentAttendanceTracker
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
         }
 
         //check the credentials entered in the text boxes, advance to home screen if valid. else tell user credentials are invalid
@@ -35,6 +35,11 @@ namespace StudentAttendanceTracker
             /*
             * Check the validity of the credentials against the database here!!!
             */
+            string username = this.usernameTextBox.Text;
+            string password = this.loginPasswordBox.Password;
+            //if username & password are invalid
+            MessageBox.Show("INVALID CRENDENTIALS! The username / password combination entered is invalid, please try again.", "Invalid Credentials");
+            //if username & password are valid...
             homeScreen home = new homeScreen();
             home.Show();
             this.Close();
