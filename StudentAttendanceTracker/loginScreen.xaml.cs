@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
 
 namespace StudentAttendanceTracker
 {
@@ -38,11 +39,25 @@ namespace StudentAttendanceTracker
             string username = this.usernameTextBox.Text;
             string password = this.loginPasswordBox.Password;
             //if username & password are invalid
-            MessageBox.Show("INVALID CRENDENTIALS! The username / password combination entered is invalid, please try again.", "Invalid Credentials");
+            MySqlConnection connectionVariable;
+            MySqlCommand searchCommand;
+            connectionVariable = new MySqlConnection();
+            connectionVariable.ConnectionString = "server=localhost;uid=root;pwd=;database=professor;";
+            searchCommand = new MySqlCommand("SELECT * FROM professorinformation WHERE username ='" + username +"'", connectionVariable);
+            connectionVariable.Open();
+            MySqlDataReader reader = searchCommand.ExecuteReader();
+            if(reader.HasRows)
+            {
+                homeScreen home = new homeScreen();
+                home.Show();
+                this.Close();
+                connectionVariable.Close();
+            }
             //if username & password are valid...
-            homeScreen home = new homeScreen();
-            home.Show();
-            this.Close();
+            else
+            {
+                MessageBox.Show("INVALID CRENDENTIALS! The username / password combination entered is invalid, please try again.", "Invalid Credentials");
+            }
         }
 
         //close this login window and open up the welcome window
