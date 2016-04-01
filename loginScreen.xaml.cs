@@ -43,7 +43,7 @@ namespace StudentAttendanceTracker
             MySqlCommand searchCommand;
             connectionVariable = new MySqlConnection();
             connectionVariable.ConnectionString = "server=localhost;uid=root;pwd=;database=professor;";
-            searchCommand = new MySqlCommand("SELECT * FROM professorinformation WHERE username ='" + username +"'", connectionVariable);
+            searchCommand = new MySqlCommand("SELECT * FROM professorinformation WHERE username ='" + username +"' AND password='" + password + "'", connectionVariable);
             connectionVariable.Open();
             MySqlDataReader reader = searchCommand.ExecuteReader();
             if(reader.HasRows)
