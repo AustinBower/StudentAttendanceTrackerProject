@@ -42,5 +42,19 @@ namespace StudentAttendanceTracker
             welcome.Show();
             this.Close();
         }
+
+        private void takeAttendanceButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            StudentSwipe studenSwipeWindow = new StudentSwipe();
+            studenSwipeWindow.Show();
+            this.Close();
+
+        }// private void takeAttendanceButton_Click(object sender, RoutedEventArgs e)
+
+        private void Eidt_Attendance_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }// private void Eidt_Attendance_Button_Click(object sender, RoutedEventArgs e)
     }
 }

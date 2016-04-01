@@ -1,28 +1,6 @@
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.csprojResolveAssemblyReference.cache
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\AddStudent.g.cs
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\homeScreen.g.cs
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\loginScreen.g.cs
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\MainWindow.g.cs
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\registerScreen.g.cs
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\App.g.cs
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker_MarkupCompile.cache
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker_MarkupCompile.lref
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.exe.config
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.exe
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.pdb
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\AddStudent.baml
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\homeScreen.baml
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\loginScreen.baml
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\MainWindow.baml
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\registerScreen.baml
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.g.resources
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.Properties.Resources.resources
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.csproj.GenerateResource.Cache
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.exe
-C:\Users\H\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.pdb
 C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.exe.config
-C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.exe
-C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.pdb
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.exe
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.pdb
 C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.csprojResolveAssemblyReference.cache
 C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\addStudent.g.cs
 C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\homeScreen.g.cs
@@ -38,3 +16,37 @@ C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTrack
 C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\MainWindow.baml
 C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\registerScreen.baml
 C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.g.resources
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.Properties.Resources.resources
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.csproj.GenerateResource.Cache
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.exe
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.pdb
+C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\bin\Debug\MySql.Data.dll
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.exe.config
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.exe
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.pdb
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.csprojResolveAssemblyReference.cache
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\addStudent.g.cs
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\DialogBox.g.cs
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\homeScreen.g.cs
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\loginScreen.g.cs
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\MainWindow.g.cs
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\registerScreen.g.cs
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\StudentSwipe.g.cs
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\App.g.cs
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker_MarkupCompile.cache
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker_MarkupCompile.lref
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.exe
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.pdb
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\bin\Debug\MySql.Data.dll
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\addStudent.baml
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\DialogBox.baml
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\homeScreen.baml
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\loginScreen.baml
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\MainWindow.baml
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\registerScreen.baml
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\StudentSwipe.baml
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.g.resources
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.Properties.Resources.resources
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\StudentAttendanceTracker.csproj.GenerateResource.Cache
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\EditAttendance.g.cs
+C:\Users\gameCoder\Desktop\StudentAttendanceTrackerProject-fbdbb26418c70af65fa41f23122fbee82c58e061\StudentAttendanceTracker\obj\Debug\EditAttendance.baml
