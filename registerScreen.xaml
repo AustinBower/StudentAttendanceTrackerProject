@@ -13,13 +13,14 @@
         <Label x:Name="registerEmail" Content="Email:" HorizontalAlignment="Center" Margin="295,176,401,190" VerticalAlignment="Center" FontSize="16" Height="30" Width="62" Foreground="#FFFFECC7"/>
         <Label x:Name="registerPassword" Content="Password:" HorizontalAlignment="Center" Margin="264,211,406,154" VerticalAlignment="Center" FontSize="16" Width="88" Height="31" HorizontalContentAlignment="Right" Foreground="#FFFFECC7"/>
         <Label x:Name="registerConfirmPassword" Content="ConfirmPassword:" HorizontalAlignment="Center" Margin="214,242,401,115" VerticalAlignment="Center" FontSize="16" Height="39" Width="143" Foreground="#FFFFECC7"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Center" Height="23" Margin="394,94,244,279" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Center" Height="23" Margin="394,121,244,252" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16"/>
-        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Center" Height="23" Margin="394,244,244,129" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16"/>
-        <TextBox x:Name="textBox_Copy2" HorizontalAlignment="Center" Height="22" Margin="394,153,244,221" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16"/>
-        <TextBox x:Name="textBox_Copy3" HorizontalAlignment="Center" Height="23" Margin="394,213,244,160" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16"/>
-        <TextBox x:Name="textBox_Copy4" HorizontalAlignment="Center" Height="24" Margin="394,182,244,190" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16"/>
-        <Button x:Name="registerSubmitButton" Content="Register" HorizontalAlignment="Center" Margin="278,303,392,61" VerticalAlignment="Center" Width="88" Click="registerSubmitButton_Click" HorizontalContentAlignment="Center" FontSize="16" Height="32"/>
-        <Button x:Name="registerGoBackButton" Content="GoBack" HorizontalAlignment="Center" Margin="394,303,273,61" VerticalAlignment="Center" Width="91" Click="registerGoBackButton_Click" HorizontalContentAlignment="Center" FontSize="16" Height="32"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Center" Height="23" Margin="394,94,244,279" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16" TabIndex="1"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Center" Height="23" Margin="394,121,244,252" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16" TabIndex="2"/>
+        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Center" Height="23" Margin="394,244,244,129" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16" TabIndex="6"/>
+        <TextBox x:Name="textBox_Copy2" HorizontalAlignment="Center" Height="22" Margin="394,153,244,221" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16" TabIndex="3"/>
+        <TextBox x:Name="textBox_Copy3" HorizontalAlignment="Center" Height="23" Margin="394,213,244,160" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16" TabIndex="5"/>
+        <TextBox x:Name="textBox_Copy4" HorizontalAlignment="Center" Height="24" Margin="394,182,244,190" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" FontSize="16" TabIndex="4"/>
+        <Button x:Name="registerSubmitButton" Content="Register" HorizontalAlignment="Center" Margin="278,303,392,61" VerticalAlignment="Center" Width="88" Click="registerSubmitButton_Click" HorizontalContentAlignment="Center" FontSize="16" Height="32" TabIndex="7" IsDefault="True"/>
+        <Button x:Name="registerGoBackButton" Content="GoBack" HorizontalAlignment="Center" Margin="394,303,273,61" VerticalAlignment="Center" Width="91" Click="registerGoBackButton_Click" HorizontalContentAlignment="Center" FontSize="16" Height="32" TabIndex="8" IsCancel="True"/>
+        <Label x:Name="registerScreenNameLabel" Content="Register" HorizontalAlignment="Left" Margin="89,36,0,0" VerticalAlignment="Top" FontSize="26.667" FontStyle="Italic" FontWeight="Bold" Foreground="#FFFFECC7"/>
     </Grid>
 </Window>

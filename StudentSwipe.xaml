@@ -16,7 +16,7 @@
                 Margin="192,246,226,53"
                 VerticalAlignment="Center"
                 Width="74"
-                Click="go_back_button_Click"/>
+                Click="go_back_button_Click" IsCancel="True"/>
 
         <TextBlock x:Name="student_instruction_block"
                     HorizontalAlignment="Center"
@@ -42,6 +42,7 @@
                     TextChanged="student_ID_input_box_TextChanged"
                     Cursor="IBeam"
                     MaxLength="18" Opacity="0"/>
+        <Label x:Name="swipeScreenNameLabel" Content="Take Attendance" HorizontalAlignment="Left" Margin="89,36,0,0" VerticalAlignment="Top" Foreground="#FFFFECC7" FontSize="26.667" FontWeight="Bold" FontStyle="Italic"/>
 
     </Grid>
 </Window>
