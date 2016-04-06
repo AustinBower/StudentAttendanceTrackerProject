@@ -1,1 +1,2 @@
 c:\users\gamecoder\documents\visual studio 2015\Projects\StudentSwipe\StudentSwipe\bin\Debug\StudentSwipe.exe.config
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentSwipe\StudentSwipe\bin\Debug\StudentSwipe.exe.config
