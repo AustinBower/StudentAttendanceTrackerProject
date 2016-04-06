@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using MySql.Data.MySqlClient;
 namespace StudentAttendanceTracker
 {
     /// <summary>
@@ -25,9 +25,49 @@ namespace StudentAttendanceTracker
         }
 
         
-
+        //on register click
         private void registerSubmitButton_Click(object sender, RoutedEventArgs e)
         {
+            formFilled.Content = "";
+            passwordNotEqual.Content = "";
+
+            //puts everything in textbox's into strings
+            String username = usernameTextBox.Text;
+            String firstname = firstnameTextBox.Text;
+            String lastname = lastnameTextBox.Text;
+            String email = emailTextBox.Text;
+            String password = passwordTextBox.Password;
+            String confirmPassword = confirmpasswordTextBox.Password;
+            
+            //checks to see if all of the fields at least have something, and checks to see if passwords are equal
+           
+
+            if (password == confirmPassword && username.Length > 0 && firstname.Length > 0 && lastname.Length > 0 && email.Length > 0 && password.Length > 0 && password.Length > 6)
+            {
+
+    //ying this is where to connect it to the database
+    //just put all of the strings attributes into the database
+                
+
+
+            }
+
+            //displays error messages to guide user to fix entry
+            else if (username.Length == 0 || firstname.Length == 0 || lastname.Length == 0 || email.Length == 0 || password.Length == 0)
+            {
+                formFilled.Content = "Please complete every field.";
+            }
+
+            else if (password.Length < 6)
+            {
+                passwordNotEqual.Content = "Your password is too short!";
+            }
+            
+
+            else if (password != confirmPassword)
+            {
+                passwordNotEqual.Content = "Your passwords do not match!";
+            }
 
         }
 
@@ -37,5 +77,7 @@ namespace StudentAttendanceTracker
             newMain.Show();
             this.Close();
         }
+
+        
     }
 }
