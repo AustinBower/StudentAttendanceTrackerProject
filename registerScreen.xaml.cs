@@ -25,7 +25,7 @@ namespace StudentAttendanceTracker
         }
 
         
-
+        //on register click
         private void registerSubmitButton_Click(object sender, RoutedEventArgs e)
         {
             formFilled.Content = "";
@@ -45,7 +45,13 @@ namespace StudentAttendanceTracker
             if (password == confirmPassword && username.Length > 0 && firstname.Length > 0 && lastname.Length > 0 && email.Length > 0 && password.Length > 0)
             {
 
+                //code starts here for change entered in database if everthing is correct
+               
+
+
             }
+
+            //displays error messages to guide user to fix entry
 
             else if (username.Length == 0 || firstname.Length == 0 || lastname.Length == 0 || email.Length == 0 || password.Length == 0)
             {
