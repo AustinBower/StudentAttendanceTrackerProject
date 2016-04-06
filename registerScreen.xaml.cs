@@ -36,27 +36,33 @@ namespace StudentAttendanceTracker
             String firstname = firstnameTextBox.Text;
             String lastname = lastnameTextBox.Text;
             String email = emailTextBox.Text;
-            String password = passwordTextBox.Text;
-            String confirmPassword = confirmpasswordTextBox.Text;
-
+            String password = passwordTextBox.Password;
+            String confirmPassword = confirmpasswordTextBox.Password;
+            
             //checks to see if all of the fields at least have something, and checks to see if passwords are equal
            
 
-            if (password == confirmPassword && username.Length > 0 && firstname.Length > 0 && lastname.Length > 0 && email.Length > 0 && password.Length > 0)
+            if (password == confirmPassword && username.Length > 0 && firstname.Length > 0 && lastname.Length > 0 && email.Length > 0 && password.Length > 0 && password.Length > 6)
             {
 
-                //code starts here for change entered in database if everthing is correct
-               
+    //ying this is where to connect it to the database
+    //just put all of the strings attributes into the database
+                
 
 
             }
 
             //displays error messages to guide user to fix entry
-
             else if (username.Length == 0 || firstname.Length == 0 || lastname.Length == 0 || email.Length == 0 || password.Length == 0)
             {
                 formFilled.Content = "Please complete every field.";
             }
+
+            else if (password.Length < 6)
+            {
+                passwordNotEqual.Content = "Your password is too short!";
+            }
+            
 
             else if (password != confirmPassword)
             {
