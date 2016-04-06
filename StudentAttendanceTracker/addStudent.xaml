@@ -8,11 +8,11 @@
         Title="Add Student" Height="525" Width="525" WindowState="Maximized">
     <Grid Background="#FF741D1E">
         <Label x:Name="label" Content="Add Student" HorizontalAlignment="Center" Margin="208,166,167,292" VerticalAlignment="Center" FontSize="24" Foreground="#FFFFECC7"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Center" Height="24" Margin="146,248,121,226" TextWrapping="Wrap" VerticalAlignment="Center" Width="250"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Center" Height="24" Margin="146,314,121,160" TextWrapping="Wrap" VerticalAlignment="Center" Width="250"/>
+        <TextBox x:Name="studentID" HorizontalAlignment="Center" Height="24" Margin="146,248,121,226" TextWrapping="Wrap" VerticalAlignment="Center" Width="250"/>
+        <TextBox x:Name="studentName" HorizontalAlignment="Center" Height="24" Margin="146,314,121,160" TextWrapping="Wrap" VerticalAlignment="Center" Width="250"/>
         <Label x:Name="label1" Content="Student ID" HorizontalAlignment="Center" Margin="230,210,188,254" VerticalAlignment="Center" FontSize="18.667" Foreground="#FFFFECC7"/>
         <Label x:Name="label2" Content="Student Name" HorizontalAlignment="Center" Margin="208,277,181,188" VerticalAlignment="Center" FontSize="18.667" Foreground="#FFFFECC7"/>
-        <Button x:Name="addStudentSubmit" Content="Submit" HorizontalAlignment="Center" Margin="163,343,279,135" VerticalAlignment="Center" Width="75"/>
+        <Button x:Name="addStudentSubmit" Content="Submit" HorizontalAlignment="Center" Margin="163,343,279,135" VerticalAlignment="Center" Width="75" Click="addStudentSubmit_Click_1"/>
         <Button x:Name="addStudentCancel" Content="Cancel" HorizontalAlignment="Center" Margin="302,343,141,135" VerticalAlignment="Center" Width="74" Click="addStudentCancel_Click"/>
     </Grid>
 </Window>
