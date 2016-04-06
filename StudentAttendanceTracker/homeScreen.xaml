@@ -10,7 +10,6 @@
         <Button x:Name="takeAttendanceButton" Content="Take Attendance" HorizontalAlignment="Center" Margin="851,35,271,0" VerticalAlignment="Top" Width="101" Click="takeAttendanceButton_Click"/>
         <Button x:Name="addStudentButton" Content="Add Student" HorizontalAlignment="Center" Margin="851,114,271,0" VerticalAlignment="Top" Width="101" Click="addStudentButton_Click"/>
         <Button x:Name="logOutButton" Content="Log Out" HorizontalAlignment="Center" Margin="851,160,271,0" VerticalAlignment="Top" Width="101" Click="logOutButton_Click" IsCancel="True"/>
-        <Button x:Name="Eidt_Attendance_Button" Content="Edit Attendance" HorizontalAlignment="Center" Margin="851,73,271,0" VerticalAlignment="Top" Width="101" Click="Eidt_Attendance_Button_Click"/>
-
+        <Button x:Name="Edit_Attendance_Button" Content="Edit Attendance" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="851,73,271,347" Width="101" Click="Edit_Attendance_Button_Click"></Button>
     </Grid>
 </Window>
