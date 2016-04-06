@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using MySql.Data.MySqlClient;
 namespace StudentAttendanceTracker
 {
     /// <summary>
@@ -28,6 +28,17 @@ namespace StudentAttendanceTracker
 
         private void registerSubmitButton_Click(object sender, RoutedEventArgs e)
         {
+            String username = usernameTextBox.Text;
+            String firstname = firstnameTextBox.Text;
+            String lastname = lastnameTextBox.Text;
+            String email = emailTextBox.Text;
+            String password = passwordTextBox.Text;
+            String confirmPassword = confirmpasswordTextBox.Text;
+
+            if (password == confirmPassword)
+            {
+
+            }
 
         }
 
@@ -37,5 +48,7 @@ namespace StudentAttendanceTracker
             newMain.Show();
             this.Close();
         }
+
+        
     }
 }
