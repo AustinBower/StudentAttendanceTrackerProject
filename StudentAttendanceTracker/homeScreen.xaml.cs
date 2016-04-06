@@ -19,6 +19,7 @@ namespace StudentAttendanceTracker
     /// </summary>
     public partial class homeScreen : Window
     {
+
         public homeScreen()
         {
             InitializeComponent();
@@ -52,9 +53,15 @@ namespace StudentAttendanceTracker
 
         }// private void takeAttendanceButton_Click(object sender, RoutedEventArgs e)
 
-        private void Eidt_Attendance_Button_Click(object sender, RoutedEventArgs e)
+        private void Edit_Attendance_Button_Click(object sender, RoutedEventArgs e)
         {
 
-        }// private void Eidt_Attendance_Button_Click(object sender, RoutedEventArgs e)
+            EditAttendance edit = new EditAttendance();
+            edit.Show();
+            this.Close();
+
+        }// private void Edit_Attendance_Button_Click(object sender, RoutedEventArgs e)
+
     }
+
 }

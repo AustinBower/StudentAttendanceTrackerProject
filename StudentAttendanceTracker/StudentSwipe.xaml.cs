@@ -22,6 +22,8 @@ namespace StudentAttendanceTracker
     public partial class StudentSwipe : Window
     {
 
+        private MySqlConnection connectionVariable;
+        private MySqlCommand updateCommand;
         private System.Timers.Timer successTimer;
         private string studentInputVariable = "";
         private static readonly DispatcherTimer timer;
@@ -29,7 +31,6 @@ namespace StudentAttendanceTracker
         StudentIDNumber studentVariable = new StudentIDNumber();
         StudentLogin loginVariable = new StudentLogin();
         bool justSwiped;
-        DialogBox dialog;
         static StudentSwipe()
         {
 
@@ -47,7 +48,6 @@ namespace StudentAttendanceTracker
             Console.WriteLine(student_instruction_block.Text);
             student_instruction_block.Visibility = Visibility.Visible;
             student_ID_input_box.Focus();
-            dialog = new DialogBox();
 
         }// public StudentSwipe
         // Button used to return to the menu screen. Comment updated 3/30/2016.
@@ -69,14 +69,11 @@ namespace StudentAttendanceTracker
             {
 
                 studentInputVariable = studentVariable.retrieveStudentId(studentInputVariable);
+                studentAttendanceTracker(studentInputVariable);
                 studentInputVariable = studentInputVariable + " " + dateVariable.GetDate(DateTime.Today);
                 studentInputVariable = studentInputVariable + " " + dateVariable.GetTimestamp(DateTime.Now);
                 loginVariable.UserInput = studentInputVariable;
                 loginVariable.databaseLoginCheck();
-                dialog.UserInput = studentInputVariable;
-                dialog.studentSwipesLogged();
-                dialog.ShowDialog();
-                System.IO.File.WriteAllText(@"C:\Users\gameCoder\Desktop\WriteText.txt", studentInputVariable);
                 student_ID_input_box.Clear();
                 if (loginVariable.StudentFound)
                 {
@@ -114,12 +111,20 @@ namespace StudentAttendanceTracker
             }// if(justSwiped)
 
         }// private void timeDelay(object sender, EventArgs e)
-        // Closes the Dialogbox that is opened for blog datebase testing. Comment Updated 3/30/2016. 
-        private void StudentSwipe_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        // Adds to the attendance counter variable in the database after each successful swipe. Comment update 4/6/2016.
+        private void studentAttendanceTracker(string userId)
         {
-            dialog.UserInput = "";
-            dialog.Close();
-        }
+
+            connectionVariable = new MySqlConnection();
+            connectionVariable.ConnectionString = "server=127.0.0.1;uid=root;pwd=;database=swipecard;";
+            string findQuery = "UPDATE student SET Attendance = Attendance + 1 WHERE StudentNumber = '" + userId + "';";
+            updateCommand = new MySqlCommand(findQuery, connectionVariable);
+            connectionVariable.Open();
+            updateCommand.ExecuteNonQuery();
+            connectionVariable.Close();
+
+        }// private void studentAttendanceTracker(string userID)
+
     }// public partial class MainWindow : Window
 
 }// namespace StudentAttendanceTracker

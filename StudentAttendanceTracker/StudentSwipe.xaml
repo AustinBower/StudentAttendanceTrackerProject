@@ -5,9 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentAttendanceTracker"
         mc:Ignorable="d"
-        Title="Student Login" Height="350" Width="500" WindowState="Maximized" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center"
-        Closing="StudentSwipe_Closing">
-    
+        Title="Student Login" Height="350" Width="500" WindowState="Maximized" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center">
+
     <Grid Background="#FF741D1E">
 
         <Button x:Name="go_back_button"

@@ -12,9 +12,20 @@
 
         <TextBox x:Name="File_Editor"
                  HorizontalAlignment="Stretch"
-                 Margin="10,10,10,13"
+                 Margin="10,44,10,10"
                  TextWrapping="Wrap"
                  VerticalAlignment="Stretch"/>
+        <TextBlock x:Name="Attendance_Number_Block"
+                   HorizontalAlignment="Left"
+                   TextWrapping="Wrap"
+                   Text="Number of dates in file: "
+                   VerticalAlignment="Top"
+                   Margin="10,23,0,0" Width="154"/>
+        <TextBlock x:Name="Number_Of_Swipes_Block" 
+                   HorizontalAlignment="Left"
+                   Margin="144,23,0,0"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

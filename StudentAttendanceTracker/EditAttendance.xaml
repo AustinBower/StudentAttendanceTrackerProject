@@ -9,10 +9,33 @@
         Closing="EditAttendence_Closing">
 
     <Grid Background="#FF741D1E">
-        <TextBox x:Name="Student_Name_Input" HorizontalAlignment="Left" Height="23" Margin="109,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="270"/>
-        <Button x:Name="Enter_Student_Name_Button" Content="Enter" HorizontalAlignment="Left" Margin="109,143,0,0" VerticalAlignment="Top" Width="75" Click="Enter_Student_Name_Button_Click"/>
-        <Button x:Name="Return_To_Home_Screen_Button" Content="Cancel" HorizontalAlignment="Left" Margin="304,143,0,0" VerticalAlignment="Top" Width="75" Click="Return_To_Home_Screen_Button_Click"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="109,75,0,0" TextWrapping="Wrap" Text="Enter the student's name" VerticalAlignment="Top" Width="144" Height="22"/>
+        <Button x:Name="Enter_Student_Name_Button"
+                Content="Enter"
+                HorizontalAlignment="Left"
+                Margin="109,143,0,0"
+                VerticalAlignment="Top"
+                Width="75"
+                Click="Enter_Student_Name_Button_Click"/>
+        <Button x:Name="Return_To_Home_Screen_Button"
+                Content="Cancel"
+                HorizontalAlignment="Left"
+                Margin="304,143,0,0"
+                VerticalAlignment="Top"
+                Width="75"
+                Click="Return_To_Home_Screen_Button_Click"/>
+        <ComboBox x:Name="Student_Name_Combobox"
+                  HorizontalAlignment="Left"
+                  Margin="109,111,0,0"
+                  VerticalAlignment="Top"
+                  Width="270"
+                  Initialized="Student_Name_Combobox_Initialized"/>
+        <TextBlock x:Name="Select_Instructions_Block"
+                   HorizontalAlignment="Left"
+                   Margin="109,92,0,0"
+                   TextWrapping="Wrap"
+                   Text="Select Student"
+                   VerticalAlignment="Top"
+                   Width="102"/>
 
     </Grid>
 </Window>

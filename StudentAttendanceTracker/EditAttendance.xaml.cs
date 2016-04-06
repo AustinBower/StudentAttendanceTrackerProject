@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
 /*Creates A UI that asks for the name and checks to see that person is in the database. Comment upated 3/31/2016.*/
 namespace StudentAttendanceTracker
 {
@@ -32,7 +33,7 @@ namespace StudentAttendanceTracker
         private void Enter_Student_Name_Button_Click(object sender, RoutedEventArgs e)
         {
 
-            dialog.UserInput = Student_Name_Input.Text;
+            dialog.UserInput = Student_Name_Combobox.Text;
             dialog.studentSwipesLogged();
             if(dialog.PersonFound)
             {
@@ -58,6 +59,29 @@ namespace StudentAttendanceTracker
             dialog.Close();
 
         }// private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        // Combobox that gives the professor the list of students in th class. Comment updated 4/6/2016.
+        private void Student_Name_Combobox_Initialized(object sender, EventArgs e)
+        {
+
+            MySqlConnection connectionVariable;
+            MySqlCommand searchCommand;
+            connectionVariable = new MySqlConnection();
+            connectionVariable.ConnectionString = "server=127.0.0.1;uid=root;pwd=;database=swipecard;";
+            string findQuery = "SELECT StudentName FROM student;";
+            searchCommand = new MySqlCommand(findQuery, connectionVariable);
+            connectionVariable.Open();
+            MySqlDataReader reader;
+            reader = searchCommand.ExecuteReader();
+            while (reader.Read())
+            {
+
+                Student_Name_Combobox.Items.Add(reader["StudentName"]);
+
+            }// while(reader.Read())
+            reader.Close();
+            connectionVariable.Close();
+
+        }// private void Student_Name_ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 
     }// public partial class EditAttendance : Window
 

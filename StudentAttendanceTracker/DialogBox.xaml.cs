@@ -70,21 +70,16 @@ namespace StudentAttendanceTracker
             connectionVariable.Open();
             MySqlDataReader reader;
             reader = searchCommand.ExecuteReader();
-            if(reader.HasRows)
-            {
-
-                PersonFound = true;
-                reader.Read();
-                File_Editor.Text = reader.GetString("Date");
-                reader.Close();
-
-            }// if(reader.HasRows)
-            else
-            {
-
-                MessageBox.Show("Error person was not found.", "Error");
-                
-            }// else of if(reader.HasRows)
+            PersonFound = true;
+            reader.Read();
+            File_Editor.Text = reader.GetString("Date");
+            reader.Close();
+            findQuery = "SELECT Attendance FROM student WHERE StudentName = '" + userInput + "';";
+            searchCommand = new MySqlCommand(findQuery, connectionVariable);
+            reader = searchCommand.ExecuteReader();
+            reader.Read();
+            Number_Of_Swipes_Block.Text = reader.GetString("Attendance");
+            reader.Close();
 
         }// private void studentSwipesLogged()
         // Closes the dialog box UI. Comment updated 3/31/2016.
@@ -94,6 +89,7 @@ namespace StudentAttendanceTracker
             if (userInput != "")
             {
 
+                int lineCounter = 0;
                 PersonFound = false;
                 MySqlConnection connectionVariable;
                 MySqlCommand updateCommand;
@@ -101,7 +97,12 @@ namespace StudentAttendanceTracker
                 connectionVariable = new MySqlConnection();
                 connectionVariable.ConnectionString = "server=127.0.0.1;uid=root;pwd=;database=swipecard;";
                 connectionVariable.Open();
-                string query = "UPDATE swipecard.student SET Date = '" + File_Editor.Text + "';";
+                string query = "UPDATE swipecard.student SET Date = '" + File_Editor.Text + "' WHERE StudentName = '" + userInput + "';";
+                updateCommand = new MySqlCommand(query, connectionVariable);
+                reader = updateCommand.ExecuteReader();
+                reader.Close();
+                lineCounter = File_Editor.LineCount - 1;
+                query = "UPDATE swipecard.student SET Attendance = '" + lineCounter + "' WHERE StudentName = '" + userInput + "';";
                 updateCommand = new MySqlCommand(query, connectionVariable);
                 reader = updateCommand.ExecuteReader();
                 reader.Close();
