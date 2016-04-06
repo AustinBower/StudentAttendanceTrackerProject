@@ -1,0 +1,17 @@
+﻿<Window x:Class="StudentAttendanceTracker.homeScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentAttendanceTracker"
+        mc:Ignorable="d"
+        Title="Home" Height="471.277" Width="1231.064" WindowState="Maximized">
+    <Grid Background="#FF741D1E">
+        <Button x:Name="takeAttendanceButton" Content="Take Attendance" HorizontalAlignment="Center" Margin="851,36,271,0" VerticalAlignment="Top" Width="101" Click="takeAttendanceButton_Click" TabIndex="1"/>
+        <Button x:Name="addStudentButton" Content="Add Student" HorizontalAlignment="Center" Margin="851,114,271,0" VerticalAlignment="Top" Width="101" Click="addStudentButton_Click" TabIndex="3"/>
+        <Button x:Name="logOutButton" Content="Log Out" HorizontalAlignment="Center" Margin="851,151,271,0" VerticalAlignment="Top" Width="101" Click="logOutButton_Click" IsCancel="True" TabIndex="4"/>
+        <Button x:Name="editAttendanceButton" Content="Edit Attendance" HorizontalAlignment="Center" Margin="851,74,271,0" VerticalAlignment="Top" Width="101" Click="editAttendanceButton_Click" TabIndex="2"/>
+        <Label x:Name="homeScreenNameLabel" Content="Home" HorizontalAlignment="Left" Margin="89,36,0,0" VerticalAlignment="Top" Foreground="#FFFFECC7" FontSize="26.667" FontStyle="Italic" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
