@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\gameCoder\Documents\Visual Studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\
+C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\
 StudentCardSwipe
 none
 false
 DEBUG;TRACE
-C:\Users\gameCoder\Documents\Visual Studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\App.xaml
-11151548125
+C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\App.xaml
+182131584
 
-9-1603088982
-141697058740
-MainWindow.xaml;
+9-1298980405
+141425079263
+SwipeCard.xaml;
 
-False
+True
 
