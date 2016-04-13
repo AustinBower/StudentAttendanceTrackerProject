@@ -1,0 +1,18 @@
+﻿<Window x:Class="StudentAttendanceTracker.homeScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentAttendanceTracker"
+        mc:Ignorable="d"
+        Title="Home" Height="471.277" Width="1231.064" WindowState="Maximized">
+    <Grid Background="#FF741D1E" Margin="0,31,0,-31">
+        <Button x:Name="addStudentButton" Content="Add Student" HorizontalAlignment="Center" Margin="851,114,271,0" VerticalAlignment="Top" Width="101" Click="addStudentButton_Click"/>
+        <Button x:Name="logOutButton" Content="Log Out" HorizontalAlignment="Center" Margin="851,215,271,0" VerticalAlignment="Top" Width="101" Click="logOutButton_Click" IsCancel="True"/>
+        <Button x:Name="addCoursesButton" Content="Add Courses" HorizontalAlignment="Center" Margin="852,75,271,0" VerticalAlignment="Top" Width="100" Click="addCoursesButton_Click"/>
+        <ComboBox x:Name="Course_comboBox" HorizontalAlignment="Left" Margin="149,75,0,0" VerticalAlignment="Top" Width="178" SelectionChanged="Course_comboBox_SelectionChanged"/>
+        <Button x:Name="checkButton" Content="Get Course Lists" HorizontalAlignment="Left" Margin="391,75,0,0" VerticalAlignment="Top" Width="135" RenderTransformOrigin="-0.053,0.15" Click="checkButton_Click"/>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" HorizontalAlignment="Left" Margin="149,136,0,0" VerticalAlignment="Top" Height="149" Width="377" SelectionChanged="dataGrid_SelectionChanged"/>
+        <Button x:Name="LoadTableButton" Content="Check Attendance" HorizontalAlignment="Left" Margin="149,313,0,0" VerticalAlignment="Top" Width="128" Click="LoadTableButton_Click"/>
+    </Grid>
+</Window>

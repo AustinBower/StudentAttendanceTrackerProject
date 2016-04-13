@@ -1,0 +1,19 @@
+﻿<Window x:Class="StudentAttendanceTracker.addStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentAttendanceTracker"
+        mc:Ignorable="d"
+        Title="Add Student" Height="525" Width="525" WindowState="Maximized">
+    <Grid Background="#FF741D1E">
+        <Label x:Name="label" Content="Add Students" HorizontalAlignment="Center" Margin="35,101,315,357" VerticalAlignment="Center" FontSize="24" Foreground="#FFFFECC7" Width="167"/>
+        <TextBox x:Name="studentID" HorizontalAlignment="Center" Height="24" Margin="208,187,59,283" TextWrapping="Wrap" VerticalAlignment="Center" Width="250"/>
+        <TextBox x:Name="studentName" HorizontalAlignment="Center" Height="24" Margin="208,237,59,233" TextWrapping="Wrap" VerticalAlignment="Center" Width="250"/>
+        <Label x:Name="label1" Content="Student ID:" HorizontalAlignment="Center" Margin="97,181,315,283" VerticalAlignment="Center" FontSize="18.667" Foreground="#FFFFECC7" Width="105"/>
+        <Label x:Name="label2" Content="Student Name" HorizontalAlignment="Center" Margin="74,227,315,233" VerticalAlignment="Center" FontSize="18.667" Foreground="#FFFFECC7" Height="34"/>
+        <Button x:Name="addStudentSubmit" Content="Submit" HorizontalAlignment="Center" Margin="155,336,287,137" VerticalAlignment="Center" Width="75" Click="addStudentSubmit_Click_1" Height="21"/>
+        <Button x:Name="addStudentCancel" Content="Cancel" HorizontalAlignment="Center" Margin="300,336,143,137" VerticalAlignment="Center" Width="74" Click="addStudentCancel_Click" Height="21"/>
+        <TextBox x:Name="txtCRN" HorizontalAlignment="Center" Height="23" Margin="208,283,59,188" TextWrapping="Wrap" VerticalAlignment="Center" Width="250"/>
+    </Grid>
+</Window>

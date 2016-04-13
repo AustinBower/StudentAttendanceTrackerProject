@@ -1,0 +1,16 @@
+﻿<Window x:Class="StudentAttendanceTracker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentAttendanceTracker"
+        mc:Ignorable="d"
+        Title="Welcome" Height="323.936" Width="525" WindowState="Maximized">
+    <Grid Background="#FF741D1E">
+        <Label x:Name="welcomeLabel" Content="Welcome to Student Attendance Tracker!" HorizontalAlignment="Center" Margin="14,70,6,173" VerticalAlignment="Center" Height="50" FontSize="26.667" Width="497" Foreground="#FFFFECC7"/>
+        <Label x:Name="buttonGuideLabel" Content="Click &quot;Login&quot; if you are an existing user or click &quot;Register&quot; if you are a new user." HorizontalAlignment="Center" Margin="14,108,6,156" VerticalAlignment="Center" Width="497" FontSize="14" Foreground="#FFFFECC7"/>
+        <Button x:Name="welcomeLoginButton" Content="Login" HorizontalAlignment="Center" Margin="160,153,271,106" VerticalAlignment="Center" Width="86" Click="welcomeLoginButton_Click" Height="34" IsDefault="True"/>
+        <Button x:Name="welcomeRegisterButton" Content="Register" HorizontalAlignment="Center" Margin="274,153,157,106" VerticalAlignment="Center" Width="86" Height="34" Click="welcomeRegisterButton_Click"/>
+
+    </Grid>
+</Window>
