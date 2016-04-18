@@ -13,6 +13,3 @@ c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\Studen
 c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.csproj.GenerateResource.Cache
 c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.exe
 c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.pdb
-C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\bin\Debug\StudentCardSwipe.exe.config
-C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.exe
-C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.pdb
