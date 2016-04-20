@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentAttendanceTracker"
         mc:Ignorable="d"
-        Title="addCourse" Height="723" Width="1197" WindowState="Maximized">
-    <Grid Background="#FF741D1E" Margin="0,0,2,-1">
-        <Label x:Name="label" Content="Add Course" HorizontalAlignment="Center" Margin="94,58,413,309" VerticalAlignment="Center" FontSize="24" Foreground="#FFFFECC7"/>
-        <TextBox x:Name="addCourseCRN" HorizontalAlignment="Center" Height="24" Margin="267,148,132,237" TextWrapping="Wrap" VerticalAlignment="Center" Width="250" Opacity="0.8"/>
-        <Label x:Name="label2" Content="CRN:" HorizontalAlignment="Center" Margin="133,138,388,237" VerticalAlignment="Center" FontSize="18.667" Foreground="#FFFFECC7" Height="34"/>
-        <Button x:Name="addCourseSubmit" Content="Submit" HorizontalAlignment="Center" Margin="536,389,576,283" VerticalAlignment="Center" Width="75" Click="addStudentSubmit_Click_1" Height="21" FontWeight="Bold"/>
-        <Button x:Name="addCourseCancel" Content="Cancel" HorizontalAlignment="Center" Margin="359,247,216,141" VerticalAlignment="Center" Width="74" Click="addStudentCancel_Click" Height="21" FontWeight="Bold"/>
-        <TextBox x:Name="courseName" HorizontalAlignment="Center" Height="24" Margin="267,195,132,190" TextWrapping="Wrap" VerticalAlignment="Center" Width="250" Opacity="0.8"/>
-        <Label x:Name="label3" Content="Course Name:" HorizontalAlignment="Center" Margin="96,201,427,206" VerticalAlignment="Center" FontSize="18.667" Foreground="#FFFFECC7" Height="34" Width="128"/>
+        Title="Add Course" Height="534.239" Width="1074.127" WindowState="Maximized">
+    <Grid Background="#FF741D1E" Margin="0,0,-8,-1">
         <Image x:Name="image" HorizontalAlignment="Left" Height="194" Margin="32,38,0,0" VerticalAlignment="Top" Width="273" Source="Resources/526342_10150749899312780_1318441028_n.jpg" Stretch="Fill"/>
+        <Label x:Name="label" Content="Add Course" HorizontalAlignment="Center" Margin="331.5,129,473.5,271" VerticalAlignment="Center" FontSize="24" Foreground="#FFFFECC7"/>
+        <TextBox x:Name="addCourseCRN" HorizontalAlignment="Center" Height="24" Margin="500.5,219,188.5,199" TextWrapping="Wrap" VerticalAlignment="Center" Width="250" Opacity="0.8"/>
+        <Label x:Name="label2" Content="CRN:" HorizontalAlignment="Center" Margin="405,209,483,199" VerticalAlignment="Center" FontSize="18.667" Foreground="#FFFFECC7" Height="34"/>
+        <Button x:Name="addCourseCancel" Content="Cancel" HorizontalAlignment="Center" Margin="592.5,318,272.5,103" VerticalAlignment="Center" Width="74" Click="addStudentCancel_Click" Height="21" FontWeight="Bold"/>
+        <TextBox x:Name="courseName" HorizontalAlignment="Center" Height="24" Margin="500.5,266,188.5,152" TextWrapping="Wrap" VerticalAlignment="Center" Width="250" Opacity="0.8"/>
+        <Label x:Name="label3" Content="Course Name:" HorizontalAlignment="Center" Margin="328.5,256,482.5,152" VerticalAlignment="Center" FontSize="18.667" Foreground="#FFFFECC7" Height="34" Width="128"/>
+        <Button x:Name="addCourseSubmit" Content="Submit" HorizontalAlignment="Center" Margin="500,319,365,103" VerticalAlignment="Center" Width="74" Click="addStudentSubmit_Click_1" Height="20" FontWeight="Bold"/>
 
     </Grid>
 </Window>

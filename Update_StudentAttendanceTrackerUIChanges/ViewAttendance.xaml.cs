@@ -17,9 +17,9 @@ namespace StudentAttendanceTracker
     /// <summary>
     /// Interaction logic for ViewEditAttendance.xaml
     /// </summary>
-    public partial class ViewEditAttendance : Window
+    public partial class ViewAttendance : Window
     {
-        public ViewEditAttendance()
+        public ViewAttendance()
         {
             InitializeComponent();
         }

@@ -71,8 +71,8 @@
     <Compile Include="registerScreen.xaml.cs">
       <DependentUpon>registerScreen.xaml</DependentUpon>
     </Compile>
-    <Compile Include="InstructorHomeWindow.xaml.cs">
-      <DependentUpon>InstructorHomeWindow.xaml</DependentUpon>
+    <Compile Include="updatedHomeScreen.xaml.cs">
+      <DependentUpon>updatedHomeScreen.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewAttendance.xaml.cs">
       <DependentUpon>ViewAttendance.xaml</DependentUpon>
@@ -122,7 +122,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="InstructorHomeWindow.xaml">
+    <Page Include="updatedHomeScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
