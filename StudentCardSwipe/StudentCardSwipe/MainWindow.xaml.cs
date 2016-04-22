@@ -39,6 +39,7 @@ namespace StudentCardSwipe
         private string studentIdSubstring;
         private string classNameInput;
         private string courseNumberString;
+        private string courseNumberInput;
         bool justSwiped;
         static MainWindow()
         {
@@ -47,6 +48,9 @@ namespace StudentCardSwipe
             timer.Interval = TimeSpan.FromSeconds(3);
 
         }// static StudentSwipe()
+        /// <summary>
+        /// Method that intializes the events for the StudentSwipe UI. Comment updated 4/20/2016.
+        /// </summary>
         public MainWindow()
         {
 
@@ -57,14 +61,22 @@ namespace StudentCardSwipe
             student_instruction_block.Visibility = Visibility.Visible;
             student_ID_input_box.Focus();
 
-        }
-
+        }// public MainWindow()
+        /// <summary>
+        /// Button event used to return to the menu screen. Comment updated 4/20/2016.
+        /// </summary>
+        /// <param name="sender"> Default parameter for the UI event. Comment updated 4/20/2016. </param>
+        /// <param name="e"> Default parameter for the UI event. Comment updated 4/20/2016. </param>
         private void go_back_button_Click(object sender, RoutedEventArgs e)
         {
 
 
-        }
-
+        }// private void go_back_button_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// Event for textbox used to input ID swipe. Comment updated 4/20/2016.
+        /// </summary>
+        /// <param name="sender"> Default parameter for the UI event. Comment updated 4/20/2016. </param>
+        /// <param name="e"> Default parameter for the UI event. Comment updated 4/20/2016. </param>
         private void student_ID_input_box_TextChanged(object sender, TextChangedEventArgs e)
         {
 
@@ -80,14 +92,17 @@ namespace StudentCardSwipe
                 connectionVariable = new MySqlConnection();
                 connectionVariable.ConnectionString = "server=127.0.0.1;uid=root;pwd=;database=swipecard;";
                 studentInputVariable = studentInputVariable.Substring(6, 9);
+                retrieveCourseNumber(class_select_comboBox.Text);
+                courseNumberString = classNameInput;
                 studentAttendanceTracker(studentInputVariable);
                 studentInputVariable = studentInputVariable + " " + GetDate(DateTime.Today);
                 studentInputVariable = studentInputVariable + " " + DateTime.Now.ToString("HH:mm:ss");
                 userInput = studentInputVariable;
+                courseNumberInput = courseNumberString;
                 databaseLoginCheck();
-                insertTime(studentFound, connectionVariable);
                 student_ID_input_box.Clear();
                 student_ID_input_box.IsEnabled = false;
+                insertTime(studentFound);
                 if (studentFound)
                 {
 
@@ -105,10 +120,15 @@ namespace StudentCardSwipe
 
                 }// else of if(loginVariable.StudentFound)
                 justSwiped = true;
-            }// if (studentInputVariable.Length == 18)
 
-        }
-        // Returns date the user swiped in. Comment updated 3/25/2016.
+        }// if (studentInputVariable.Length == 18)
+
+        }// private void student_ID_input_box_TextChanged(object sender, TextChangedEventArgs e)
+        /// <summary>
+        /// Returns the time the user swiped in using 24-hour clock time. Comment updated 3/25/2016.
+        /// </summary>
+        /// <param name="Date"> Brings in the information from the class DateTime. Comment updated 4/202/2016. </param>
+        /// <returns> Returns the time the user swiped in. Comment updated 4/20/2016. </returns>
         public string GetDate(DateTime Date)
         {
 
@@ -140,7 +160,9 @@ namespace StudentCardSwipe
             return refinedStringDate;
 
         }// public string GetDate(DateTime Date)
-        // Takes studentId information from string and checks it against known IDs in the database. Comment updated 3/25/2016.
+        /// <summary>
+        /// Takes studentId information from string and checks it against known IDs in the database. Comment updated 3/25/2016.
+        /// </summary>
         public void databaseLoginCheck()
         {
 
@@ -152,7 +174,7 @@ namespace StudentCardSwipe
             connectionVariable = new MySqlConnection();
             connectionVariable.ConnectionString = "server=127.0.0.1;uid=root;pwd=;database=swipecard;";
             connectionVariable.Open();
-            searchCommand = new MySqlCommand("SELECT * FROM student WHERE StudentNumber = '" + studentIdSubstring + "' AND ClassID = '" + courseNumberString + "'", connectionVariable);
+            searchCommand = new MySqlCommand("SELECT * FROM student WHERE StudentNumber = '" + studentIdSubstring + "' AND ClassID = '" + courseNumberInput + "'", connectionVariable);
             MySqlDataReader reader = searchCommand.ExecuteReader();
             if (reader.HasRows)
             {
@@ -163,48 +185,31 @@ namespace StudentCardSwipe
             connectionVariable.Close();
 
         }// public bool databaseLoginCheck()
-        // Method that inserts the time into the date column from the user input. Comment updated 3/29/2016.
-        private void insertTime(bool foundInput, MySqlConnection connectionInput)
+        /// <summary>
+        /// Method that inserts the time into the date column from the user input. Comment updated 3/29/2016. 
+        /// </summary>
+        /// <param name="foundInput"> Used to bring the boolean that determine if
+        /// the database is accessed. Comment updated 4/20/2016. </param>
+        public void insertTime(bool foundInput)
         {
 
-            /*
-            *Database connection using MySQL. Please remove comment if changed to SQL.
-            */
             connectionVariable = new MySqlConnection();
             connectionVariable.ConnectionString = "server=127.0.0.1;uid=root;pwd=;database=swipecard;";
             if (foundInput)
             {
 
-                int counter = 0;
-                string tempStringVariable = "";
                 dateSubstring = userInput.Substring(10);
-                string dateRefinedString = "";
-                while (dateSubstring.Substring(counter, 1) != " ")
-                {
-
-                    dateRefinedString = tempStringVariable + dateSubstring.Substring(counter, 1);
-                    tempStringVariable = dateRefinedString;
-                    counter++;
-
-                }// while (Date.ToString().Substring(counter, 1) != " ")
-                string findQuery = "SELECT AttendanceDate FROM StudentInfo WHERE StudentNumber = '" + userInput.Substring(0, 9) + "' AND ClassID = '" + courseNumberString + "';";
-                searchCommand = new MySqlCommand(findQuery, connectionInput);
-                connectionInput.Open();
+                string findQuery = "SELECT Date FROM student WHERE StudentNumber = '" + userInput.Substring(0, 9) + "' AND ClassID = '" + courseNumberInput + "';";
+                searchCommand = new MySqlCommand(findQuery, connectionVariable);
+                connectionVariable.Open();
                 MySqlDataReader reader;
                 reader = searchCommand.ExecuteReader();
                 reader.Read();
+                string currentDateString = reader.GetString("Date");
+                currentDateString += "\n" + dateSubstring;
                 reader.Close();
-                /*
-                
-                   string query = "UPDATE swipecard.student SET Date ='" + currentDateString + "' WHERE StudentNumber = '" + userInput.Substring(0, 9) + "' AND ClassID = '" + courseNumberString + "';";
-                   
-                   This line of code is used to update the database using the course number of the class the student is in to refine between multiple entries of the same student.
-                   The AND ClassID part is really what matters.
-                   If converted to SQL please remove.
-                    
-                */
-                string query = "UPDATE StudentAttendanceTracker.AttendanceDetails SET AttendanceDate ='" + dateRefinedString + "' AND SET AttendanceTime = '" + dateSubstring.Substring(counter) + "' WHERE StudentNumber = " + userInput.Substring(0, 9) + ";";
-                insertCommand = new MySqlCommand(query, connectionInput);
+                string query = "UPDATE swipecard.student SET Date ='" + currentDateString + "' WHERE StudentNumber = '" + userInput.Substring(0, 9) + "' AND ClassID = '" + courseNumberInput + "';";
+                insertCommand = new MySqlCommand(query, connectionVariable);
                 reader = insertCommand.ExecuteReader();
                 while (reader.Read())
                 {
@@ -212,11 +217,15 @@ namespace StudentCardSwipe
                 }// while(reader.Read())
 
             }// if(foundInput) 
-            connectionInput.Close();
+            connectionVariable.Close();
 
         }// private static void insertTime(bool foundInput)
-         // Method that creates a moment where the software does not make any changes until amount of
-         // time has passed. Comment updated 3/25/2016.
+         /// <summary>
+         /// Method that creates a moment where the software does not make any changes until amount of
+         /// time has passed. Comment updated 3/25/2016.
+         /// </summary>
+         /// <param name="sender"> Default parameter for the UI event. Comment updated 4/20/2016. </param>
+         /// <param name="e"> Default parameter for the UI event. Comment updated 4/20/2016. </param>
         private void timeDelay(object sender, EventArgs e)
         {
 
@@ -233,7 +242,12 @@ namespace StudentCardSwipe
             student_ID_input_box.Focus();
 
         }// private void timeDelay(object sender, EventArgs e)
-        // Adds to the attendance counter variable in the database after each successful swipe. Comment update 4/6/2016.
+        /// <summary>
+        /// Adds 1 to the attendance after each swipe to show how many swipes have been made by the student.
+        /// Comment updated 4/16/2016.
+        /// </summary>
+        /// <param name="userId"> UserId brings in the student ID number to be used in the database
+        /// for selecting the student who swiped in. Comment updated 4/20/2016. </param>
         private void studentAttendanceTracker(string userId)
         {
 
@@ -246,7 +260,11 @@ namespace StudentCardSwipe
             connectionVariable.Close();
 
         }// private void studentAttendanceTracker(string userID)
-        // uses the chosen class name to get the course number of class. Comment updated 4/17/2016.
+        /// <summary>
+        /// uses the chosen class name to get the course number of class. Comment updated 4/17/2016.
+        /// </summary>
+        /// <param name="userInput"> Brings in the name of the class from the combobox event to be used 
+        /// in determining which class is selected. Comment updated 4/20/2016. </param>
         public void retrieveCourseNumber(string userInput)
         {
 
@@ -261,11 +279,14 @@ namespace StudentCardSwipe
             connectionVariable.Close();
 
         }// public void retrieveCourseNumber(string classNameInput)
-        // Allows professors to select which class the student swipes for. Comment updated 4/16/2016.
+        /// <summary>
+        /// Combobox event that allows the professors to select which class the student swipes for. Comment updated 4/20/2016.
+        /// </summary>
+        /// <param name="sender"> Default parameter for the UI event. Comment updated 4/20/2016. </param>
+        /// <param name="e"> Default parameter for the UI event. Comment updated 4/20/2016. </param>
         private void class_select_comboBox_Initialized(object sender, EventArgs e)
         {
 
-            Console.WriteLine("entered the combobox");
             connectionVariable = new MySqlConnection();
             connectionVariable.ConnectionString = "server=127.0.0.1;uid=root;pwd=;database=swipecard;";
             string findQuery = "SELECT Class FROM courses;";
