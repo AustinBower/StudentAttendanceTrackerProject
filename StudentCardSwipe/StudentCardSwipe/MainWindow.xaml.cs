@@ -94,7 +94,6 @@ namespace StudentCardSwipe
                 studentInputVariable = studentInputVariable.Substring(6, 9);
                 retrieveCourseNumber(class_select_comboBox.Text);
                 courseNumberString = classNameInput;
-                studentAttendanceTracker(studentInputVariable);
                 studentInputVariable = studentInputVariable + " " + GetDate(DateTime.Today);
                 studentInputVariable = studentInputVariable + " " + DateTime.Now.ToString("HH:mm:ss");
                 userInput = studentInputVariable;
@@ -102,12 +101,15 @@ namespace StudentCardSwipe
                 databaseLoginCheck();
                 student_ID_input_box.Clear();
                 student_ID_input_box.IsEnabled = false;
-                insertTime(studentFound);
                 if (studentFound)
                 {
 
+                    insertTime();
+                    studentAttendanceTracker(studentInputVariable.Substring(0, 9));
                     student_instruction_block.Text = "Successful Swipe!";
                     go_back_button.Visibility = Visibility.Collapsed;
+                    class_select_comboBox.Visibility = Visibility.Collapsed;
+                    class_select_instruction_textBlock.Visibility = Visibility.Collapsed;
                     timer.Start();
 
                 }// if(loginVariable.StudentFound)
@@ -116,6 +118,8 @@ namespace StudentCardSwipe
 
                     student_instruction_block.Text = "Invalid Swipe!";
                     go_back_button.Visibility = Visibility.Collapsed;
+                    class_select_comboBox.Visibility = Visibility.Collapsed;
+                    class_select_instruction_textBlock.Visibility = Visibility.Collapsed;
                     timer.Start();
 
                 }// else of if(loginVariable.StudentFound)
@@ -190,36 +194,31 @@ namespace StudentCardSwipe
         /// </summary>
         /// <param name="foundInput"> Used to bring the boolean that determine if
         /// the database is accessed. Comment updated 4/20/2016. </param>
-        public void insertTime(bool foundInput)
+        public void insertTime()
         {
 
             connectionVariable = new MySqlConnection();
             connectionVariable.ConnectionString = "server=127.0.0.1;uid=root;pwd=;database=swipecard;";
-            if (foundInput)
+            dateSubstring = userInput.Substring(10);
+            string findQuery = "SELECT Date FROM student WHERE StudentNumber = '" + userInput.Substring(0, 9) + "' AND ClassID = '" + courseNumberInput + "';";
+            searchCommand = new MySqlCommand(findQuery, connectionVariable);
+            connectionVariable.Open();
+            MySqlDataReader reader;
+            reader = searchCommand.ExecuteReader();
+            reader.Read();
+            string currentDateString = reader.GetString("Date");
+            currentDateString += "\n" + dateSubstring;
+            reader.Close();
+            string query = "UPDATE swipecard.student SET Date ='" + currentDateString + "' WHERE StudentNumber = '" + userInput.Substring(0, 9) + "' AND ClassID = '" + courseNumberInput + "';";
+            insertCommand = new MySqlCommand(query, connectionVariable);
+            reader = insertCommand.ExecuteReader();
+            while (reader.Read())
             {
 
-                dateSubstring = userInput.Substring(10);
-                string findQuery = "SELECT Date FROM student WHERE StudentNumber = '" + userInput.Substring(0, 9) + "' AND ClassID = '" + courseNumberInput + "';";
-                searchCommand = new MySqlCommand(findQuery, connectionVariable);
-                connectionVariable.Open();
-                MySqlDataReader reader;
-                reader = searchCommand.ExecuteReader();
-                reader.Read();
-                string currentDateString = reader.GetString("Date");
-                currentDateString += "\n" + dateSubstring;
-                reader.Close();
-                string query = "UPDATE swipecard.student SET Date ='" + currentDateString + "' WHERE StudentNumber = '" + userInput.Substring(0, 9) + "' AND ClassID = '" + courseNumberInput + "';";
-                insertCommand = new MySqlCommand(query, connectionVariable);
-                reader = insertCommand.ExecuteReader();
-                while (reader.Read())
-                {
-
-                }// while(reader.Read())
-
-            }// if(foundInput) 
+            }// while(reader.Read())
             connectionVariable.Close();
 
-        }// private static void insertTime(bool foundInput)
+        }// private static void insertTime()
          /// <summary>
          /// Method that creates a moment where the software does not make any changes until amount of
          /// time has passed. Comment updated 3/25/2016.
@@ -268,15 +267,26 @@ namespace StudentCardSwipe
         public void retrieveCourseNumber(string userInput)
         {
 
-            connectionVariable = new MySqlConnection();
-            connectionVariable.ConnectionString = "server=127.0.0.1;uid=root;pwd=;database=swipecard;";
-            connectionVariable.Open();
-            searchCommand = new MySqlCommand("SELECT CourseNumber FROM courses WHERE Class = '" + userInput + "'", connectionVariable);
-            MySqlDataReader reader = searchCommand.ExecuteReader();
-            reader.Read();
-            classNameInput = reader.GetString("CourseNumber");
-            reader.Close();
-            connectionVariable.Close();
+            if (userInput != "")
+            {
+
+                connectionVariable = new MySqlConnection();
+                connectionVariable.ConnectionString = "server=127.0.0.1;uid=root;pwd=;database=swipecard;";
+                connectionVariable.Open();
+                searchCommand = new MySqlCommand("SELECT CourseNumber FROM courses WHERE Class = '" + userInput + "'", connectionVariable);
+                MySqlDataReader reader = searchCommand.ExecuteReader();
+                reader.Read();
+                classNameInput = reader.GetString("CourseNumber");
+                reader.Close();
+                connectionVariable.Close();
+
+            }// if(userInput != "")
+            else
+            {
+
+                MessageBox.Show("There is no selected class.");
+
+            }// else of if(userInput != "")
 
         }// public void retrieveCourseNumber(string classNameInput)
         /// <summary>
@@ -307,5 +317,6 @@ namespace StudentCardSwipe
 
         }// private void class_select_comboBox_Initialized(object sender, EventArgs e)
 
-    }
-}
+    }// public partial class MainWindow : Window
+
+}// namespace StudentCardSwipe

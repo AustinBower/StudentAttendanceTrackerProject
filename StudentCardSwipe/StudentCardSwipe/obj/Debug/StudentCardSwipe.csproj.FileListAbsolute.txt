@@ -13,3 +13,18 @@ c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\Studen
 c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.csproj.GenerateResource.Cache
 c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.exe
 c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.pdb
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\bin\Debug\StudentCardSwipe.exe.config
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.exe
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.pdb
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\bin\Debug\StudentCardSwipe.exe
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\bin\Debug\StudentCardSwipe.pdb
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\bin\Debug\MySql.Data.dll
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.csprojResolveAssemblyReference.cache
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\MainWindow.g.cs
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\App.g.cs
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe_MarkupCompile.cache
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe_MarkupCompile.lref
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\MainWindow.baml
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.g.resources
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.Properties.Resources.resources
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.csproj.GenerateResource.Cache

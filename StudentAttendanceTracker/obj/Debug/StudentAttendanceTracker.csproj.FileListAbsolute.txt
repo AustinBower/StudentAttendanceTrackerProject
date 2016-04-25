@@ -1,1 +1,2 @@
 C:\Users\Sam\Desktop\College\Spring 2016\Software\Project\StudentAttendanceTracker\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.exe.config
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentAttendanceTracker\bin\Debug\StudentAttendanceTracker.exe.config
