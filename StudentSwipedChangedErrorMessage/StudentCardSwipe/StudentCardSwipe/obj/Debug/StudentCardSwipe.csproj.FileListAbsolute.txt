@@ -1,0 +1,18 @@
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\bin\Debug\StudentCardSwipe.exe.config
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.csprojResolveAssemblyReference.cache
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\MainWindow.g.cs
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\App.g.cs
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe_MarkupCompile.cache
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe_MarkupCompile.lref
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\bin\Debug\StudentCardSwipe.exe
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\bin\Debug\StudentCardSwipe.pdb
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\bin\Debug\MySql.Data.dll
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\MainWindow.baml
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.g.resources
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.Properties.Resources.resources
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.csproj.GenerateResource.Cache
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.exe
+c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.pdb
+C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\bin\Debug\StudentCardSwipe.exe.config
+C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.exe
+C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.pdb
