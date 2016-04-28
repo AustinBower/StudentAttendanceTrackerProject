@@ -29,7 +29,7 @@ namespace StudentAttendanceTracker
 
         private void addStudentSubmit_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Initiate");
+            errormessage.Content = "Initiate";
             SqlConnection connectionVariable = new SqlConnection(@"Data Source=YINGJUN\SQLEXPRESS;Initial Catalog=StudentAttendanceTracker;Integrated Security=True");
             SqlCommand studentCommand = new SqlCommand("SELECT COUNT(*) FROM CourseInfo WHERE CRN = '" + addCourseCRN.Text + "'", connectionVariable);
             try
@@ -46,13 +46,13 @@ namespace StudentAttendanceTracker
                 }
                 else
                 {
-                    MessageBox.Show("CRN already exists!");
+                    errormessage.Content = "CRN already exists!";
                     connectionVariable.Close();
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("Query execution error");
+                errormessage.Content = "Query execution error";
             }
             homeScreen homeScreenWindow = new homeScreen();
             homeScreenWindow.Show();

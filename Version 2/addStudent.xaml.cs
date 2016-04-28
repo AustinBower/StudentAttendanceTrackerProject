@@ -49,13 +49,13 @@ namespace StudentAttendanceTracker
                 }
                 else
                 {
-                    MessageBox.Show("Student ID already exists!");
+                    errormessage.Content ="Student ID already exists!";
                     connectionVariable.Close();
                 }
             }
             catch(Exception)
             {
-                MessageBox.Show("Query execution error");
+                errormessage.Content = "Query execution error";
             }
             //go to homeWindow
             homeScreen homeScreenWindow = new homeScreen();

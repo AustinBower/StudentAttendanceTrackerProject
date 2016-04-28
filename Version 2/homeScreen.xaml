@@ -8,7 +8,7 @@
         Title="Home" ResizeMode="NoResize" Height="800" Width="730">
     <Grid Background="#A7060C" Margin="0,-3,2,3">
         <Image x:Name="image" HorizontalAlignment="Left" Height="135" Margin="0,0,0,0" VerticalAlignment="Top" Width="730" Source="Resources/Concord Logo.jpg" Stretch="Fill" Opacity="0.95"/>
-        <ComboBox x:Name="Course_comboBox" HorizontalAlignment="Left" Margin="164,409,0,0" VerticalAlignment="Top" Width="152" SelectionChanged="Course_comboBox_SelectionChanged"/>
+        <ComboBox x:Name="Course_comboBox" HorizontalAlignment="Left" Margin="164,409,0,0" VerticalAlignment="Top" Width="352" SelectionChanged="Course_comboBox_SelectionChanged" Initialized="Course_comboBox_Initialized"/>
         <Grid Margin="0,335,-2,580">
             <Rectangle Fill="#2B2B2B" HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="724" Opacity="0.8" RenderTransformOrigin="0.5,0.5" Margin="-2,-12,0,-44">
                 <Rectangle.RenderTransform>
@@ -22,14 +22,6 @@
             </Rectangle>
             <Label x:Name="checkAttendance" Content="Check Attendances" HorizontalAlignment="Left" Margin="123,-11,0,-35" VerticalAlignment="Top" FontSize="27" FontStyle="Italic" FontWeight="Bold" Foreground="#FFFEFD"/>
         </Grid>
-        <Button x:Name="checkButton" Content="Get Course Lists" HorizontalAlignment="Left" Margin="362,409,0,0" VerticalAlignment="Top" Width="135" RenderTransformOrigin="-0.053,0.15" Click="checkButton_Click" Foreground="White" Opacity="0.9">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
         <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" HorizontalAlignment="Left" Margin="129,470,0,0" VerticalAlignment="Top" Height="149" Width="428" SelectionChanged="dataGrid_SelectionChanged"/>
         <Button x:Name="LoadTableButton" Content="Check Attendance" HorizontalAlignment="Left" Margin="164,647,0,0" VerticalAlignment="Top" Width="128" Click="LoadTableButton_Click" Foreground="White" Opacity="0.9">
             <Button.Background>

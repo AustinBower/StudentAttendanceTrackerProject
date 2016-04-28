@@ -38,6 +38,9 @@ namespace StudentAttendanceTracker
         {
             addStudent addStudentWindow = new addStudent();
             addStudentWindow.Show();
+            image1.Visibility = Visibility.Hidden;
+            image2.Visibility = Visibility.Hidden;
+            image3.Visibility = Visibility.Visible;
             this.Close();
         }
 
@@ -57,6 +60,9 @@ namespace StudentAttendanceTracker
         {
             addCourse addCourseWindow = new addCourse();
             addCourseWindow.Show();
+            image1.Visibility = Visibility.Hidden;
+            image2.Visibility = Visibility.Visible;
+            image3.Visibility = Visibility.Hidden;
             this.Close();
         }
 
@@ -69,26 +75,7 @@ namespace StudentAttendanceTracker
 
         private void checkButton_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection connectionVariable = new SqlConnection(@"Data Source=YINGJUN\SQLEXPRESS;Initial Catalog=StudentAttendanceTracker;Integrated Security=True");
-            try
-            {
-                 connectionVariable.Open();
-                SqlCommand courseCommand = new SqlCommand("SELECT CourseName FROM CourseInfo", connectionVariable);
-                SqlDataReader reader = courseCommand.ExecuteReader();
-                while (reader.Read())
-                {
-                    Course_comboBox.Items.Add(reader["CourseName"]);
-                }
-                reader.Close();
-                connectionVariable.Close();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            
-
-
+ 
         }
         private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -122,6 +109,27 @@ namespace StudentAttendanceTracker
             SwipeCard swipeCardWindow = new SwipeCard();
             swipeCardWindow.Show();
             this.Close();
+        }
+
+        private void Course_comboBox_Initialized(object sender, EventArgs e)
+        {
+            SqlConnection connectionVariable = new SqlConnection(@"Data Source=YINGJUN\SQLEXPRESS;Initial Catalog=StudentAttendanceTracker;Integrated Security=True");
+            try
+            {
+                connectionVariable.Open();
+                SqlCommand courseCommand = new SqlCommand("SELECT CRN FROM CourseInfo", connectionVariable);
+                SqlDataReader reader = courseCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    Course_comboBox.Items.Add(reader["CRN"]);
+                }
+                reader.Close();
+                connectionVariable.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 
