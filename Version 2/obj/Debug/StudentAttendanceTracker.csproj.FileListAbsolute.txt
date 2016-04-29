@@ -229,3 +229,5 @@ C:\Users\Yingjun\Desktop\Version 2\obj\Debug\SwipeCard.baml
 C:\Users\Yingjun\Desktop\Version 2\obj\Debug\StudentAttendanceTracker.g.resources
 C:\Users\Yingjun\Desktop\Version 2\obj\Debug\StudentAttendanceTracker.Properties.Resources.resources
 C:\Users\Yingjun\Desktop\Version 2\obj\Debug\StudentAttendanceTracker.csproj.GenerateResource.Cache
+C:\Users\Yingjun\Desktop\Version 2\obj\Debug\editAttendances.g.cs
+C:\Users\Yingjun\Desktop\Version 2\obj\Debug\editAttendances.baml

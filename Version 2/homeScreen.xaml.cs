@@ -66,42 +66,12 @@ namespace StudentAttendanceTracker
             this.Close();
         }
 
-        private void Course_comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-             /*       
-            
-           */
-        }
-
-        private void checkButton_Click(object sender, RoutedEventArgs e)
-        {
- 
-        }
-        private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
 
         private void LoadTableButton_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection connectionVariable = new SqlConnection(@"Data Source=YINGJUN\SQLEXPRESS;Initial Catalog=StudentAttendanceTracker;Integrated Security=True");
-            try
-            {
-                connectionVariable.Open();
-                SqlCommand courseCommand = new SqlCommand("select CourseName, StudentName, Attendances from StudentInfo join CourseInfo on CourseInfo.CourseID = StudentInfo.CourseID", connectionVariable);
-                courseCommand.ExecuteNonQuery();
-                SqlDataAdapter attendance = new SqlDataAdapter(courseCommand);
-                DataTable check = new DataTable("StudentInfo");
-                attendance.Fill(check);
-                dataGrid.ItemsSource = check.DefaultView;
-                attendance.Update(check);
-                connectionVariable.Close();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            
+            editAttendances editAttendance = new editAttendances();
+            editAttendance.Show();
+            this.Close();            
         }
 
         private void TakeAttendanceButton_Click(object sender, RoutedEventArgs e)
@@ -124,6 +94,27 @@ namespace StudentAttendanceTracker
                     Course_comboBox.Items.Add(reader["CRN"]);
                 }
                 reader.Close();
+                connectionVariable.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Course_comboBox_DropDownClosed(object sender, EventArgs e)
+        {
+            SqlConnection connectionVariable = new SqlConnection(@"Data Source=YINGJUN\SQLEXPRESS;Initial Catalog=StudentAttendanceTracker;Integrated Security=True");
+            try
+            {
+                connectionVariable.Open();
+                SqlCommand courseCommand = new SqlCommand("select CourseName, StudentNumber, StudentName, Attendances from StudentInfo join CourseInfo on CourseInfo.CourseID = StudentInfo.CourseID where CRN = '" + Course_comboBox.Text + "'", connectionVariable);
+                courseCommand.ExecuteNonQuery();
+                SqlDataAdapter attendance = new SqlDataAdapter(courseCommand);
+                DataTable check = new DataTable("StudentInfo");
+                attendance.Fill(check);
+                dataGrid.ItemsSource = check.DefaultView;
+                attendance.Update(check);
                 connectionVariable.Close();
             }
             catch (Exception ex)

@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentAttendanceTracker"
         mc:Ignorable="d"
-        Title="Home" ResizeMode="NoResize" Height="800" Width="730">
+        Title="Home" ResizeMode="NoResize" Height="700" Width="730">
     <Grid Background="#A7060C" Margin="0,-3,2,3">
         <Image x:Name="image" HorizontalAlignment="Left" Height="135" Margin="0,0,0,0" VerticalAlignment="Top" Width="730" Source="Resources/Concord Logo.jpg" Stretch="Fill" Opacity="0.95"/>
-        <ComboBox x:Name="Course_comboBox" HorizontalAlignment="Left" Margin="164,409,0,0" VerticalAlignment="Top" Width="352" SelectionChanged="Course_comboBox_SelectionChanged" Initialized="Course_comboBox_Initialized"/>
+        <ComboBox x:Name="Course_comboBox" HorizontalAlignment="Left" Margin="164,397,0,0" VerticalAlignment="Top" Width="352" Initialized="Course_comboBox_Initialized" DropDownClosed="Course_comboBox_DropDownClosed"/>
         <Grid Margin="0,335,-2,580">
             <Rectangle Fill="#2B2B2B" HorizontalAlignment="Left" Height="56" VerticalAlignment="Top" Width="724" Opacity="0.8" RenderTransformOrigin="0.5,0.5" Margin="-2,-12,0,-44">
                 <Rectangle.RenderTransform>
@@ -22,15 +22,7 @@
             </Rectangle>
             <Label x:Name="checkAttendance" Content="Check Attendances" HorizontalAlignment="Left" Margin="123,-11,0,-35" VerticalAlignment="Top" FontSize="27" FontStyle="Italic" FontWeight="Bold" Foreground="#FFFEFD"/>
         </Grid>
-        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" HorizontalAlignment="Left" Margin="129,470,0,0" VerticalAlignment="Top" Height="149" Width="428" SelectionChanged="dataGrid_SelectionChanged"/>
-        <Button x:Name="LoadTableButton" Content="Check Attendance" HorizontalAlignment="Left" Margin="164,647,0,0" VerticalAlignment="Top" Width="128" Click="LoadTableButton_Click" Foreground="White" Opacity="0.9">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" HorizontalAlignment="Left" Margin="129,444,0,0" VerticalAlignment="Top" Height="149" Width="428"/>
         <Button x:Name="addStudentButton" Content="Add Student" HorizontalAlignment="Center" Margin="303,276,317,0" VerticalAlignment="Top" Width="102" Click="addStudentButton_Click" Foreground="White" Opacity="0.9">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -44,14 +36,6 @@
                     <GradientStop Color="White" Offset="1"/>
                 </LinearGradientBrush>
             </Button.OpacityMask>
-        </Button>
-        <Button x:Name="logOutButton" Content="Log Out" HorizontalAlignment="Center" Margin="362,647,258,0" VerticalAlignment="Top" Width="102" Click="logOutButton_Click" IsCancel="True" Foreground="White" Opacity="0.9">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="White" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
         </Button>
         <Button x:Name="addCoursesButton" Content="Add Courses" HorizontalAlignment="Center" Margin="124,276,498,0" VerticalAlignment="Top" Width="100" Click="addCoursesButton_Click" Foreground="White" Opacity="0.9">
             <Button.Background>
@@ -87,5 +71,21 @@
         </Grid>
         <Image x:Name="image2" HorizontalAlignment="Left" Height="94" Margin="102,185,0,0" VerticalAlignment="Top" Width="500" Source="Resources/step2.jpg" Stretch="Fill" Opacity="0.95" Visibility="Hidden"/>
         <Image x:Name="image3" HorizontalAlignment="Left" Height="94" Margin="102,185,0,0" VerticalAlignment="Top" Width="500" Source="Resources/step3.jpg" Stretch="Fill" Opacity="0.95" Visibility="Hidden"/>
+        <Button x:Name="LoadTableButton" Content="Edit Attendance" HorizontalAlignment="Left" Margin="168,622,0,0" VerticalAlignment="Top" Width="128" Click="LoadTableButton_Click" Foreground="White" Opacity="0.9">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="logOutButton" Content="Log Out" HorizontalAlignment="Center" Margin="366,622,254,0" VerticalAlignment="Top" Width="102" Click="logOutButton_Click" IsCancel="True" Foreground="White" Opacity="0.9">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

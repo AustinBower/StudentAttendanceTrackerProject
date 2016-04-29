@@ -65,6 +65,9 @@
     <Compile Include="addStudent.xaml.cs">
       <DependentUpon>addStudent.xaml</DependentUpon>
     </Compile>
+    <Compile Include="editAttendances.xaml.cs">
+      <DependentUpon>editAttendances.xaml</DependentUpon>
+    </Compile>
     <Compile Include="registerScreen.xaml.cs">
       <DependentUpon>registerScreen.xaml</DependentUpon>
     </Compile>
@@ -74,6 +77,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="addStudent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editAttendances.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
