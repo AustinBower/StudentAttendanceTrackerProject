@@ -14,6 +14,7 @@ c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\Studen
 c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.exe
 c:\users\gamecoder\documents\visual studio 2015\Projects\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\bin\Debug\StudentCardSwipe.exe.config
 C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.exe
 C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.pdb
@@ -30,6 +31,8 @@ C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentSwipedChangedErr
 C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.Properties.Resources.resources
 C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.csproj.GenerateResource.Cache
 =======
+=======
+>>>>>>> origin/master
 C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\bin\Debug\StudentCardSwipe.exe.config
 C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.exe
 C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.pdb
@@ -45,4 +48,7 @@ C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentSwipe
 C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.g.resources
 C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.Properties.Resources.resources
 C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\StudentSwipedChangedErrorMessage\StudentCardSwipe\StudentCardSwipe\obj\Debug\StudentCardSwipe.csproj.GenerateResource.Cache
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master

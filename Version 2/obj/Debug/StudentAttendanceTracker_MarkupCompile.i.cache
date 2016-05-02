@@ -10,6 +10,7 @@ none
 false
 DEBUG;TRACE
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\Yingjun\Desktop\Version 2\App.xaml
 82094218804
 
@@ -20,6 +21,11 @@ addCourse.xaml;addStudent.xaml;editAttendances.xaml;homeScreen.xaml;loginScreen.
 C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\Version 2\App.xaml
 71756391857
 
+=======
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\Version 2\App.xaml
+71756391857
+
+>>>>>>> origin/master
 15-123808967
 14-1182756101
 addCourse.xaml;addStudent.xaml;homeScreen.xaml;loginScreen.xaml;MainWindow.xaml;registerScreen.xaml;SwipeCard.xaml;
