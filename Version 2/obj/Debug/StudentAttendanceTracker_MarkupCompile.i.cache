@@ -4,17 +4,26 @@
 winexe
 C#
 .cs
-C:\Users\Yingjun\Desktop\Version 2\obj\Debug\
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\Version 2\obj\Debug\
 StudentAttendanceTracker
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\Yingjun\Desktop\Version 2\App.xaml
 82094218804
 
 16-705470161
 14-641302794
 addCourse.xaml;addStudent.xaml;editAttendances.xaml;homeScreen.xaml;loginScreen.xaml;MainWindow.xaml;registerScreen.xaml;SwipeCard.xaml;
+=======
+C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\Version 2\App.xaml
+71756391857
+
+15-123808967
+14-1182756101
+addCourse.xaml;addStudent.xaml;homeScreen.xaml;loginScreen.xaml;MainWindow.xaml;registerScreen.xaml;SwipeCard.xaml;
+>>>>>>> origin/master
 
 True
 
