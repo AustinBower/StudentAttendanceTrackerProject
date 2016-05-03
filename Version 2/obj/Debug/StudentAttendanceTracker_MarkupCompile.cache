@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Yingjun\Desktop\Version 2\obj\Debug\
+C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\Version 2\obj\Debug\
 StudentAttendanceTracker
 none
 false
 DEBUG;TRACE
-C:\Users\Yingjun\Desktop\Version 2\App.xaml
+C:\Users\Yingjun\Desktop\StudentAttendanceTrackerProject\Version 2\App.xaml
 82094218804
 
 12518767665
-14-641302794
+142134207325
 addCourse.xaml;addStudent.xaml;editAttendances.xaml;homeScreen.xaml;loginScreen.xaml;MainWindow.xaml;registerScreen.xaml;SwipeCard.xaml;
 
 False
