@@ -230,7 +230,6 @@ C:\Users\Yingjun\Desktop\Version 2\obj\Debug\StudentAttendanceTracker.g.resource
 C:\Users\Yingjun\Desktop\Version 2\obj\Debug\StudentAttendanceTracker.Properties.Resources.resources
 C:\Users\Yingjun\Desktop\Version 2\obj\Debug\StudentAttendanceTracker.csproj.GenerateResource.Cache
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\Yingjun\Desktop\Version 2\obj\Debug\editAttendances.g.cs
 C:\Users\Yingjun\Desktop\Version 2\obj\Debug\editAttendances.baml
 =======
@@ -238,8 +237,6 @@ C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\Version 2\bi
 C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\Version 2\obj\Debug\StudentAttendanceTracker.exe
 C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\Version 2\obj\Debug\StudentAttendanceTracker.pdb
 >>>>>>> origin/master
-=======
-C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\Version 2\bin\Debug\StudentAttendanceTracker.exe.config
-C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\Version 2\obj\Debug\StudentAttendanceTracker.exe
-C:\Users\gameCoder\Documents\GitHub\StudentAttendanceTrackerProject\Version 2\obj\Debug\StudentAttendanceTracker.pdb
->>>>>>> origin/master
+C:\Users\gameCoder\Desktop\Version 2\bin\Debug\StudentAttendanceTracker.exe.config
+C:\Users\gameCoder\Desktop\Version 2\obj\Debug\StudentAttendanceTracker.exe
+C:\Users\gameCoder\Desktop\Version 2\obj\Debug\StudentAttendanceTracker.pdb
